@@ -8,24 +8,28 @@ Pentru a vedea site-ul live intrați pe [smarthack.asmi.ro](https://smarthack.as
 # Instrucțiuni pentru developeri
 
 Cerințe:
-* Node >= 10
-* NPM
-* Repository-ul folosește [Git Large File Storage (LFS)](https://git-lfs.github.com/)
+
+- Node >= 10
+- NPM
+- Repository-ul folosește [Git Large File Storage (LFS)](https://git-lfs.github.com/)
   pentru a stoca imaginile și documentele binare.
-  * Pe Windows, vine de obicei instalat cu Git.
-  * Pe alte sisteme, poate fi instalat din package manager.
+  - Pe Windows, vine de obicei instalat cu Git.
+  - Pe alte sisteme, poate fi instalat din package manager.
 
 ### Instalare dependințe
+
 ```{bash}
 npm install
 ```
 
 ### Start server dev
+
 ```{bash}
 npm run dev
 ```
 
 ### Build
+
 ```{bash}
 npm run build
 ```
