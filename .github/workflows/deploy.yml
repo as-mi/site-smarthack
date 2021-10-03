@@ -2,7 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches: [ master ]
+    branches: [main]
 
 jobs:
   deploy:
@@ -13,16 +13,22 @@ jobs:
       with:
         lfs: true
 
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+    - name: Install Node.js
+      uses: actions/setup-node@v2
       with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm install
-    - run: npm run build
+        node-version: '14'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build the production version of the site
+      run: npm run build
       env:
         CI: true
+
     - name: Copy metatag image to output
       run: mkdir -p ./dist/img/ && cp ./src/img/metatag.png ./dist/img/
+
     - name: Deploy through SFTP
       uses: SamKirkland/FTP-Deploy-Action@3.0.0
       with:
