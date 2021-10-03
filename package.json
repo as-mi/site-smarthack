@@ -4,12 +4,12 @@
   "description": "Acest repo conține codul din spatele site-ului de prezentare al hackathon-ului Smarthack, organizat de Asociația Studenților la Matematică și Informatică.",
   "private": true,
   "dependencies": {
-    "counterup2": "^1.0.4",
+    "counterup2": "^2.0.2",
     "waypoints": "^4.0.1"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4",
-    "parcel-plugin-imagemin": "^4.0.1"
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-imagemin": "^4.0.2"
   },
   "scripts": {
     "dev": "parcel ./src/*.html",

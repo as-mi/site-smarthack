@@ -22,11 +22,13 @@ Cerințe:
 npm install
 ```
 
-### Start server dev
+### Pornire server de dezvoltare
 
 ```{bash}
 npm run dev
 ```
+
+Site-ul local va fi disponibil la adresa `http://localhost:1234`.
 
 ### Build
 
