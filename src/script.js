@@ -1,7 +1,7 @@
 import counterUp from 'counterup2'
 require( 'waypoints/lib/noframework.waypoints.js' );
 
-var SMARTHACK_DATE = new Date(2020, 9, 31, 11); // 31 octombrie 2020, ora 11, luna e 0-indexed
+var SMARTHACK_DATE = new Date(2021, 10, 6, 11); // 6 noiembrie 2021, ora 11, luna e 0-indexed
 
 $( document ).ready(function() {
 	var window_height = $(window).height();
@@ -31,7 +31,7 @@ $( document ).ready(function() {
         var body = $("html, body");
 		body.stop().animate({scrollTop:0}, 1000, 'swing');
 	});
-	
+
 	$(".scrollTop").on("click",function(){
         var body = $("html, body");
         body.stop().animate({scrollTop:0}, 1000, 'swing');
@@ -51,13 +51,13 @@ $( document ).ready(function() {
         var section5Top = $('#section5').position().top;
         body.stop().animate({scrollTop: section5Top}, 1000, 'swing');
 	});
-	
+
 	$("#button-inscriere").on("click",function(){
         var body = $("html, body");
         var section5Top = $('#section5').position().top;
         body.stop().animate({scrollTop: section5Top}, 1000, 'swing');
 	});
-	
+
 	$(".button-inscriere").on("click",function(){
         var body = $("html, body");
         var section5Top = $('#section5').position().top;
@@ -83,12 +83,12 @@ $( document ).ready(function() {
 
     var date_future = SMARTHACK_DATE;
     var date_now = new Date();
-	
+
     var seconds = Math.floor((date_future - (date_now))/1000);
     var minutes = Math.floor(seconds/60);
     var hours = Math.floor(minutes/60);
     var days = Math.floor(hours/24);
-    
+
     var hours = hours-(days*24);
     var minutes = minutes-(days*24*60)-(hours*60);
     var seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
@@ -97,7 +97,7 @@ $( document ).ready(function() {
 		var timer = $('.timer');
 		timer.removeClass('col-11 col-sm-8 col-md-4')
 		timer.html("<li id='start-concurs'>🎉 Concursul a început! 🎉</li>")
-    	
+
     }
 	else{
 		z.html(days);
@@ -105,8 +105,8 @@ $( document ).ready(function() {
         m.html(minutes);
         s.html(seconds);
 	}
-    
-     
+
+
 
     var calcNewYear = setInterval(function(){
 		date_future = SMARTHACK_DATE;
@@ -116,7 +116,7 @@ $( document ).ready(function() {
         minutes = Math.floor(seconds/60);
         hours = Math.floor(minutes/60);
         days = Math.floor(hours/24);
-        
+
         hours = hours-(days*24);
         minutes = minutes-(days*24*60)-(hours*60);
         seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
@@ -126,16 +126,16 @@ $( document ).ready(function() {
 			var timer = $('.timer');
 			timer.removeClass('col-11 col-sm-8 col-md-4')
 			timer.html("<li id='start-concurs'>🎉 Concursul a început! 🎉</li>")
-		
+
 		}
        	else{
 			z.html(days);
 			o.html(hours);
 			m.html(minutes);
 			s.html(seconds);
-		   }	
-        
-       	
+		   }
+
+
     },1000);
 
     var hamburgerActive = 0;
@@ -175,7 +175,7 @@ $( document ).ready(function() {
 
 	// get countable elements
 	const countables = document.getElementsByClassName('count');
-	for (const el of countables) 
+	for (const el of countables)
 	{
 		//create waypoint for each countable. on scroll => start counting
 		var waypoint = new Waypoint({
@@ -185,18 +185,18 @@ $( document ).ready(function() {
 			this.destroy();
 		},
 		offset: 'bottom-in-view',
-	}) 
+	})
 	}
-		
-	
-  
+
+
+
 
 });
 
 window.addEventListener("scroll", function(){
-	const 
-	verticalScroll = window.pageYOffset, 
-	pageWidth = window.innerWidth, 
+	const
+	verticalScroll = window.pageYOffset,
+	pageWidth = window.innerWidth,
 	section1Height = document.querySelector("#section1-container").offsetHeight;
 
 	if(pageWidth > 980){
@@ -214,5 +214,5 @@ window.addEventListener("scroll", function(){
 			document.querySelector("#logoHeader").style.opacity = "0";
 		}
 	}
-	
+
 })
