@@ -238,12 +238,13 @@ a:focus {
   justify-content: space-between;
 }
 
-#header #section1-container .row .big-logo {
+#big-logo {
   display: flex;
   align-items: center;
+  margin-top: 100px;
 }
 
-#header #section1-container .row .big-logo img {
+#big-logo img {
   width: 68%;
   height: auto;
   margin: 0 auto;
@@ -306,13 +307,13 @@ a:focus {
   font-size: 1.5vw;
 }
 
-#header #section1-container .row #section1-info h4 i {
+#header #section1-container > .row #section1-info h4 i {
   color: #ea7927;
   margin: 0 15px;
   font-size: 2vw;
 }
 
-#header #section1-container .row:first-child {
+#header #section1-container > .row:first-child {
   padding-bottom: 30px;
   margin-bottom: 60px;
   border-bottom: solid 5px #ea7927;
