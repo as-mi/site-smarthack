@@ -196,23 +196,22 @@ $( document ).ready(function() {
 window.addEventListener("scroll", function(){
 	const
 	verticalScroll = window.pageYOffset,
-	pageWidth = window.innerWidth,
 	section1Height = document.querySelector("#section1-container").offsetHeight;
 
-	if(pageWidth > 980){
-		if(verticalScroll === 0){
-			document.querySelector("nav").style.backgroundColor = "#0a0f18e3";
-		}
-		else{
-			document.querySelector("nav").style.backgroundColor = "#0a0f18";
-		}
-
-		if(verticalScroll > section1Height*2/3){
-			document.querySelector("#logoHeader").style.opacity = "1";
-		}
-		else{
-			document.querySelector("#logoHeader").style.opacity = "0";
-		}
+	if(verticalScroll === 0){
+		document.querySelector("nav").style.backgroundColor = "#0a0f18e3";
+	}
+	else{
+		document.querySelector("nav").style.backgroundColor = "#0a0f18";
 	}
 
+	console.log("here");
+	console.log(verticalScroll, section1Height)
+
+	if(verticalScroll > section1Height*2/3){
+		document.querySelector("#logoHeader").style.opacity = "1";
+	}
+	else{
+		document.querySelector("#logoHeader").style.opacity = "0";
+	}
 })
