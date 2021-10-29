@@ -45,6 +45,10 @@ a:focus {
   background-color: #ea7927;
 }
 
+.img-optimize-contrast {
+  image-rendering: -webkit-optimize-contrast;
+}
+
 #header {
   position: relative;
 }
