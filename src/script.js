@@ -1,7 +1,7 @@
 import counterUp from 'counterup2'
 require( 'waypoints/lib/noframework.waypoints.js' );
 
-var SMARTHACK_DATE = new Date(2021, 10, 6, 12); // 6 noiembrie 2021, ora 12, luna e 0-indexed
+var SMARTHACK_DATE = new Date(2022, 10, 5, 11); // 6 noiembrie 2022, ora 12, luna e 0-indexed
 
 $( document ).ready(function() {
 	var window_height = $(window).height();

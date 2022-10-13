@@ -28,6 +28,10 @@ ul {
   margin: 0 !important;
 }
 
+#euro{
+  color: #595ca7;
+}
+
 a,
 a:hover,
 a:active,
@@ -41,8 +45,21 @@ a:focus {
   width: 100%;
 }
 
+
+#sponsori a{
+  flex:1;
+  align-items: center;
+}
+
+#sponsori a img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 .section-colored {
-  background-color: #ea7927;
+  background-color: #595ca7;
 }
 
 .img-optimize-contrast {
@@ -68,6 +85,8 @@ a:focus {
 #header .logo.logoASMI > img {
   height: 40px;
 }
+
+
 
 #header nav a {
   letter-spacing: 2px;
@@ -151,7 +170,7 @@ a:focus {
 }
 
 #header > nav #menu > li > a:hover {
-  color: #ea7927 !important;
+  color: #595ca7 !important;
   /* background-color: #e1e1e1; */
 }
 
@@ -285,7 +304,7 @@ a:focus {
 }
 
 #header #section1-container .row #section1-info span {
-  color: #ea7927;
+  color: #595ca7;
 }
 
 #header #section1-container .row #section1-info h3,
@@ -312,7 +331,7 @@ a:focus {
 }
 
 #header #section1-container > .row #section1-info h4 i {
-  color: #ea7927;
+  color: #595ca7;
   margin: 0 15px;
   font-size: 2vw;
 }
@@ -320,7 +339,7 @@ a:focus {
 #header #section1-container > .row:first-child {
   padding-bottom: 30px;
   margin-bottom: 60px;
-  border-bottom: solid 5px #ea7927;
+  border-bottom: solid 5px #595ca7;
 }
 
 #header #section1-container .row:nth-child(2) .timer {
@@ -334,31 +353,48 @@ a:focus {
   color: #2e4571;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   text-transform: uppercase;
+}
+
+.premiu > div{
+  margin: auto;
 }
 
 #header #section1-container .row:nth-child(2) .timer li > span {
   font-weight: 300;
+  margin-right: 1em;
+  text-align: left;
+  align-items: left;
 }
 
 #header #section1-container .row:nth-child(2) .timer li > span:first-child {
-  font-size: 3vw;
+  font-size: 300%;
   line-height: 100%;
   margin-bottom: 10px;
+  /* margin-left: 0.5em; */
+
 }
 
 #header #section1-container .row:nth-child(2) .timer li > span:last-child {
-  font-size: 1.2vw;
+  font-size: 100%;
+  
+  margin-left: 0%;
+  padding: 0%;
+  text-align: left;
 }
 
+.altePremii{
+
+  font-size: larger;
+}
 
 #header #section1-container .row:nth-child(2) .button {
   box-sizing: border-box;
   width: 100%;
   padding: 1% 0;
-  border: solid 5px #ea7927;
-  color: #ea7927 !important;
+  border: solid 5px #595ca7;
+  color: #595ca7 !important;
   font-weight: 700;
   font-size: 2vw;
   cursor: pointer;
@@ -433,7 +469,7 @@ a:focus {
 #section2-container {
   background-color: #e1e1e1;
   /*padding: 300px 2rem 60px 3rem;*/
-  padding: 2rem;
+  padding: 4rem 10rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -461,7 +497,7 @@ a:focus {
 
 #section2-container .row.goals-row > div > div > span {
   font-size: 4vw;
-  color: #ea7927;
+  color: #595ca7;
 }
 
 #section2-container .row.despre-row > div {
@@ -473,7 +509,7 @@ a:focus {
   text-align: center;
   margin-bottom: 15px;
   font-size: 24px;
-  color: #ea7927;
+  color: #595ca7;
 }
 
 #section2-container .row.despre-row > div > p {
@@ -482,7 +518,7 @@ a:focus {
 }
 
 .section-where-when {
-  background-color: #ea7927;
+  background-color: #595ca7;
   padding: 60px 0;
   color: white;
 }
@@ -551,7 +587,7 @@ a:focus {
 #section3 .container .row h1:before {
   content: "";
   width: 40%;
-  border-bottom: solid 1px #ea7927;
+  border-bottom: solid 1px #595ca7;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -578,7 +614,7 @@ a:focus {
 }
 
 .color-orange {
-  color: #ea7927;
+  color: #595ca7;
 }
 
 .text-light {
@@ -613,16 +649,23 @@ a:focus {
 }
 
 #section4 .s-logo {
-  color: #ea7927;
+  color: #595ca7;
   font-weight: bold;
   text-decoration: underline;
 }
 
+strong a{
+  text-decoration: none;
+  color:#595ca7;
+}
+
 #section5 {
+
+  /* font-size: x-large; */
   position: relative;
-  padding-top: 150px;
+  padding-top: 50px;
   z-index: 99;
-  min-height: 100%;
+  min-height: 60%;
   background: #ffffff;
   /* Old browsers */
   background: -webkit-linear-gradient(
@@ -690,8 +733,8 @@ a:focus {
 #section5 .button-inscriere {
   box-sizing: border-box;
   padding: 1% 60px;
-  border: solid 5px #ea7927;
-  color: #ea7927 !important;
+  border: solid 5px #595ca7;
+  color: #595ca7 !important;
   font-weight: 700;
   font-size: 2vw;
   cursor: pointer;
@@ -703,7 +746,7 @@ a:focus {
 }
 
 #section5 .button-inscriere:hover {
-  background-color: #ea7927;
+  background-color: #595ca7;
   color: white !important;
   text-decoration: none !important;
 }
@@ -817,7 +860,7 @@ a:focus {
   font-size: 20px;
   width: 100%;
   text-align: center;
-  color: #ea7927;
+  color: #595ca7;
   background-color: #e1e1e1;
   display: inline-block;
   margin-bottom: 30px;
@@ -837,7 +880,7 @@ a:focus {
   top: 0.5em;
   width: 100%;
   height: 1px;
-  background-color: #ea7927;
+  background-color: #595ca7;
   left: 0;
   z-index: 0;
 }
@@ -865,9 +908,30 @@ a:focus {
     margin-bottom: 1.5rem;
   }
 
-  .partners .innovation-partners > * {
-    flex: 1;
+
+  .innovation-partners{
+    width: 100%;
   }
+  .line2{
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .partners .innovation-partners > * {
+    max-width: 10em;
+    text-align: center;
+  }
+
+
+  .partners .innovation-partners > a >img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  
 }
 
 #section7 {
@@ -904,7 +968,7 @@ a:focus {
 #section7 > div h1:before {
   content: "";
   width: 30%;
-  border-bottom: solid 1px #ea7927;
+  border-bottom: solid 1px #595ca7;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -919,7 +983,7 @@ a:focus {
 }
 
 #section7 > div i {
-  color: #ea7927;
+  color: #595ca7;
   font-size: 60px;
   margin-right: 30px;
 }
@@ -930,7 +994,7 @@ a:focus {
 
 #section7 > div a,
 #section7 > div span {
-  color: #ea7927 !important;
+  color: #595ca7 !important;
   font-size: 24px;
 }
 
@@ -1140,7 +1204,7 @@ a:focus {
   }
 
   .mobile-info > .container > .row > div h1 > span {
-    color: #ea7927;
+    color: #595ca7;
   }
 
   .mobile-info > .container > .row > div h2 {
@@ -1150,7 +1214,7 @@ a:focus {
   }
 
   .mobile-info > .container > .row > div h2 > span {
-    color: #ea7927;
+    color: #595ca7;
   }
 
   .mobile-info > .container > .row > div h3 {
@@ -1159,7 +1223,7 @@ a:focus {
   }
 
   .mobile-info > .container > .row > div h3 > span {
-    color: #ea7927;
+    color: #595ca7;
     margin-right: 30px;
     font-weight: 600;
   }
@@ -1167,28 +1231,33 @@ a:focus {
   .mobile-info > .container > .row > div h4 {
     text-align: center;
     font-size: 3vw;
-    font-weight: 600;
-    color: #ea7927;
+    font-weight: 200;
+    color: #595ca7;
   }
 
   .mobile-info > .container > .row > div h4 > a {
-    color: #ea7927;
+    color: #595ca7;
   }
 
-  .mobile-info > .container > .row > div h4 > i {
+  .mobile-info > .container > .row > div h4  i {
     margin: 0 2vw;
     color: #e1e1e1;
   }
+  .mobile-info > .container > .row > div h4  p {
+    margin: 0 2vw;
+    color: #e1e1e1;
+  }
+
 
   .button-inscriere {
     display: table !important;
     margin: 60px auto 0 !important;
     font-size: 16px !important;
-    color: #ea7927 !important;
+    color: #595ca7 !important;
     font-weight: 600 !important;
     padding: 12px 60px !important;
     text-transform: uppercase;
-    border: solid 4px #ea7927;
+    border: solid 4px #595ca7;
     transition: all 300ms ease;
   }
 
@@ -1279,7 +1348,7 @@ a:focus {
 
 @media (max-width: 480px) {
   #header #section1-container > .row:first-child {
-    border-bottom: solid 4px #ea7927;
+    border-bottom: solid 4px #595ca7;
   }
 
   #header #section1-container .timer {
@@ -1299,10 +1368,17 @@ a:focus {
     padding-bottom: 60px;
   }
 
+  .mobile-info > .container div{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .mobile-info h3,
   .mobile-info h4 {
     font-size: 5vw !important;
+    
   }
+  
 
   .mobile-info h3 span {
     position: relative;
@@ -1311,7 +1387,7 @@ a:focus {
   .mobile-info h3 span:after {
     content: "";
     position: absolute;
-    background-color: #ea7927;
+    background-color: #595ca7;
     width: 2vw;
     height: 2vw;
     top: 30%;
@@ -1324,6 +1400,11 @@ a:focus {
     text-align: center;
     padding: 16px 0 !important;
   }
+  
+  #section2-container{
+    padding: 2rem;
+  }
+
 
   #section2-container > .goals-row i,
   #section2-container > .goals-row span {
@@ -1399,6 +1480,14 @@ a:focus {
 
   #section7 > div .contact-links .contact-link {
     padding: 12px 0 !important;
+  }
+
+  .innovation-partners a{
+    max-width: 7em;
+  }
+  #sponsori a{
+    flex:none;
+    max-width: 7em;
   }
 }
 
