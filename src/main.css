@@ -1511,6 +1511,16 @@ strong a {
   margin-bottom: 30px;
 }
 
+.card-container div ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.card-container div ul li {
+  margin-bottom: 20px;
+  color: #2e4571;
+}
+
 .registration-card {
   padding: 24px;
   margin: 30px;
@@ -1521,6 +1531,11 @@ strong a {
   border-radius: 12px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   max-width: 40%;
+}
+
+.important-text {
+  font-size: medium;
+  font-weight: bold;
 }
 
 @media (max-width: 767px) {
@@ -1537,7 +1552,7 @@ strong a {
   }
 
   .registration-card:nth-child(2) {
-    background-color: #e1e1e1;
+    background: linear-gradient(#e1e1e1 0%, #e1e1e1 100%);
   }
 }
 
