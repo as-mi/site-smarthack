@@ -5,6 +5,8 @@ Smarthack, organizat de Asociația Studenților la Matematică și Informatică.
 
 Pentru a vedea site-ul live intrați pe [smarthack.asmi.ro](https://smarthack.asmi.ro/)
 
+Formaular inscriere realizat prin Tally [inscriere.smarthack.asmi.ro](https://inscriere.smarthack.asmi.ro/)
+
 # Instrucțiuni pentru developeri
 
 Cerințe:
