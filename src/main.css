@@ -2,6 +2,21 @@
   margin: 0;
   padding: 0;
   /* scroll-behavior: smooth; */
+
+  /* 
+    COLORS USED:  
+  light - #e328ff
+  dark - #300e4b
+  blue - #5369e9
+
+  alb -fefefe
+  light pink: 6a4d72
+  pretty pink: ad7ab9
+*/
+
+  --main-color: #a10074;
+  --secondary-color: rgb(24, 12, 31);
+  --navbar-color:rgb(24, 12, 31);
 }
 
 html,
@@ -29,7 +44,7 @@ ul {
 }
 
 #euro {
-  color: #595ca7;
+  color: var(--main-color);
 }
 
 a,
@@ -59,7 +74,7 @@ a:focus {
 
 
 .section-colored {
-  background-color: #595ca7;
+  background-color: var(--main-color);
 }
 
 .img-optimize-contrast {
@@ -108,6 +123,7 @@ a:focus {
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
+  background-color:var(--secondary-color);
 }
 
 #header nav div#logoHeader {
@@ -166,11 +182,11 @@ a:focus {
 }
 
 #header>nav #menu>li>a.sticky {
-  color: #2e4571 !important;
+  color: var(--secondary-color) !important;
 }
 
 #header>nav #menu>li>a:hover {
-  color: #595ca7 !important;
+  color: var(--main-color) !important;
   /* background-color: #e1e1e1; */
 }
 
@@ -190,7 +206,7 @@ a:focus {
 }
 
 #header>nav .hamburger.sticky {
-  color: #2e4571;
+  color: var(--secondary-color);
 }
 
 #header #whiteBackground-gradient {
@@ -298,7 +314,7 @@ a:focus {
 }
 
 #header #section1-container .row #section1-info span {
-  color: #595ca7;
+  color: var(--main-color);
 }
 
 #header #section1-container .row #section1-info h3,
@@ -325,7 +341,7 @@ a:focus {
 }
 
 #header #section1-container>.row #section1-info h4 i {
-  color: #595ca7;
+  color: var(--main-color);
   margin: 0 15px;
   font-size: 2vw;
 }
@@ -333,7 +349,7 @@ a:focus {
 #header #section1-container>.row:first-child {
   padding-bottom: 30px;
   margin-bottom: 60px;
-  border-bottom: solid 5px #595ca7;
+  border-bottom: solid 5px var(--main-color);
 }
 
 #header #section1-container .row:nth-child(2) .timer {
@@ -344,7 +360,7 @@ a:focus {
 }
 
 #header #section1-container .row:nth-child(2) .timer li {
-  color: #2e4571;
+  color: var(--secondary-color);
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -387,8 +403,8 @@ a:focus {
   box-sizing: border-box;
   width: 100%;
   padding: 1% 0;
-  border: solid 5px #595ca7;
-  color: #595ca7 !important;
+  border: solid 5px var(--main-color);
+  color: var(--main-color) !important;
   font-weight: 700;
   font-size: 2vw;
   cursor: pointer;
@@ -410,7 +426,7 @@ a:focus {
   font-weight: 300;
   font-size: 1.8vw;
   text-transform: none;
-  color: #2e4571;
+  color: var(--secondary-color);
 
 }
 
@@ -476,7 +492,7 @@ a:focus {
 #section2-container .row.goals-row>div>div>i {
   font-size: 4vw;
   margin-right: 15px;
-  color: #2e4571;
+  color: var(--secondary-color);
 }
 
 #section2-container .row.goals-row>div>div>i.fa-hourglass {
@@ -485,28 +501,47 @@ a:focus {
 
 #section2-container .row.goals-row>div>div>span {
   font-size: 4vw;
-  color: #595ca7;
+  color: var(--main-color);
 }
 
-#section2-container .row.despre-row>div {
+.faq-card {
+  padding-top: 20px;
+  /* margin-top: 20px; */
+  
+  /* margin: 25px;  */
+  /* hardcoded colors to match background gradient */
+  /* first color is the one matching the background at the top of the card
+      and second the one matching the background at the bottom of the card */
+  background: linear-gradient(#ededee 0%, #e0e0e0 100%);
+  border-radius: 12px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  /* max-width: 40%; */
+  height: 80%;
+}
+
+#section2-container .row.despre-row{
+  padding: auto;
+}
+
+#section2-container .row.despre-row>div>div {
   margin-bottom: 60px;
-  padding: 0 30px;
+  padding: 10px 30px;
 }
 
-#section2-container .row.despre-row>div>h1 {
+#section2-container .row.despre-row>div>div>h1 {
   text-align: center;
   margin-bottom: 15px;
   font-size: 24px;
-  color: #595ca7;
+  color: var(--main-color);
 }
 
-#section2-container .row.despre-row>div>p {
+#section2-container .row.despre-row>div>div>p {
   text-align: center;
   color: #203442;
 }
 
 .section-where-when {
-  background-color: #595ca7;
+  background-color: var(--main-color);
   padding: 60px 0;
   color: white;
 }
@@ -517,7 +552,11 @@ a:focus {
 }
 
 .section-where-when h3 {
-  font-size: 20px;
+  font-size: 22px;
+}
+
+.section-where-when p {
+  font-size: 18px;
 }
 
 .section-where-when h3:not(:first-child) {
@@ -576,7 +615,7 @@ a:focus {
 #section3 .container .row h1:before {
   content: "";
   width: 40%;
-  border-bottom: solid 1px #595ca7;
+  border-bottom: solid 1px var(--main-color);
   position: absolute;
   bottom: 0;
   right: 0;
@@ -594,7 +633,7 @@ a:focus {
 }
 
 .color-orange {
-  color: #595ca7;
+  color: var(--main-color);
 }
 
 .text-light {
@@ -629,14 +668,14 @@ a:focus {
 }
 
 #section4 .s-logo {
-  color: #595ca7;
+  color: var(--main-color);
   font-weight: bold;
   text-decoration: underline;
 }
 
 strong a {
   text-decoration: none;
-  color: #595ca7;
+  color: var(--main-color);
 }
 
 #section5 {
@@ -688,7 +727,7 @@ strong a {
 #section5 h2,
 #section5 p,
 #section5 .teams-list {
-  color: #2e4571;
+  color: var(--secondary-color);
 }
 
 #section5 a {
@@ -702,8 +741,8 @@ strong a {
 #section5 .button-inscriere {
   box-sizing: border-box;
   padding: 1% 60px;
-  border: solid 5px #595ca7;
-  color: #595ca7 !important;
+  border: solid 5px var(--main-color);
+  color: var(--main-color) !important;
   font-weight: 700;
   font-size: 2vw;
   cursor: pointer;
@@ -715,7 +754,7 @@ strong a {
 }
 
 #section5 .button-inscriere:hover {
-  background-color: #595ca7;
+  background-color: var(--main-color);
   color: white !important;
   text-decoration: none !important;
 }
@@ -810,13 +849,13 @@ strong a {
   margin-bottom: 60px;
   padding-bottom: 15px;
   position: relative;
-  color: #2e4571;
+  color: var(--main-color);
 }
 
 #section6 h1:before {
   content: "";
   width: 200px;
-  border-bottom: solid 1px #2e4571;
+  border-bottom: solid 1px var(--main-color);
   position: absolute;
   bottom: 0;
   right: 0;
@@ -829,7 +868,7 @@ strong a {
   font-size: 20px;
   width: 100%;
   text-align: center;
-  color: #595ca7;
+  color: var(--main-color);
   background-color: #e1e1e1;
   display: inline-block;
   margin-bottom: 30px;
@@ -849,7 +888,7 @@ strong a {
   top: 0.5em;
   width: 100%;
   height: 1px;
-  background-color: #595ca7;
+  background-color: var(--main-color);
   left: 0;
   z-index: 0;
 }
@@ -938,7 +977,7 @@ strong a {
 #section7>div h1:before {
   content: "";
   width: 30%;
-  border-bottom: solid 1px #595ca7;
+  border-bottom: solid 1px var(--main-color);
   position: absolute;
   bottom: 0;
   right: 0;
@@ -953,7 +992,7 @@ strong a {
 }
 
 #section7>div i {
-  color: #595ca7;
+  color: var(--main-color);
   font-size: 60px;
   margin-right: 30px;
 }
@@ -964,7 +1003,7 @@ strong a {
 
 #section7>div a,
 #section7>div span {
-  color: #595ca7 !important;
+  color: var(--main-color) !important;
   font-size: 24px;
 }
 
@@ -1048,9 +1087,9 @@ strong a {
     padding-top: 140px;
   }
 
-  #header nav {
+  /* #header nav {
     background-color: #0a0f18e3;
-  }
+  } */
 
   #header nav #menu {
     display: flex;
@@ -1100,7 +1139,7 @@ strong a {
   #header nav #menu>li>a {
     height: 80px;
     padding: 0px 30px;
-    color: #2e4571 !important;
+    color: var(--secondary-color) !important;
   }
 
   #header nav #menu>li.inscrie-te {
@@ -1112,7 +1151,7 @@ strong a {
   }
 
   #header nav .hamburger.active {
-    color: #2e4571;
+    color: var(--secondary-color);
     right: 15px;
   }
 
@@ -1177,7 +1216,7 @@ strong a {
   }
 
   .mobile-info>.container>.row>div h1>span {
-    color: #595ca7;
+    color: var(--main-color);
   }
 
   .mobile-info>.container>.row>div h2 {
@@ -1187,7 +1226,7 @@ strong a {
   }
 
   .mobile-info>.container>.row>div h2>span {
-    color: #595ca7;
+    color: var(--main-color);
   }
 
   .mobile-info>.container>.row>div h3 {
@@ -1196,7 +1235,7 @@ strong a {
   }
 
   .mobile-info>.container>.row>div h3>span {
-    color: #595ca7;
+    color: var(--main-color);
     margin-right: 30px;
     font-weight: 600;
   }
@@ -1205,11 +1244,11 @@ strong a {
     text-align: center;
     font-size: 3vw;
     font-weight: 200;
-    color: #595ca7;
+    color: var(--main-color);
   }
 
   .mobile-info>.container>.row>div h4>a {
-    color: #595ca7;
+    color: var(--main-color);
   }
 
   .mobile-info>.container>.row>div h4 i {
@@ -1227,11 +1266,11 @@ strong a {
     display: table !important;
     margin: 60px auto 0 !important;
     font-size: 16px !important;
-    color: #595ca7 !important;
+    color: var(--main-color) !important;
     font-weight: 600 !important;
     padding: 12px 60px !important;
     text-transform: uppercase;
-    border: solid 4px #595ca7;
+    border: solid 4px var(--main-color);
     transition: all 300ms ease;
   }
 
@@ -1307,7 +1346,7 @@ strong a {
   }
 
   .hamburger {
-    color: #2e4571 !important;
+    color: var(--secondary-color) !important;
   }
 
   .footer a,
@@ -1322,7 +1361,7 @@ strong a {
 
 @media (max-width: 480px) {
   #header #section1-container>.row:first-child {
-    border-bottom: solid 4px #595ca7;
+    border-bottom: solid 4px var(--main-color);
   }
 
   #header #section1-container .timer {
@@ -1361,7 +1400,7 @@ strong a {
   .mobile-info h3 span:after {
     content: "";
     position: absolute;
-    background-color: #595ca7;
+    background-color: var(--main-color);
     width: 2vw;
     height: 2vw;
     top: 30%;
@@ -1518,7 +1557,7 @@ strong a {
 
 .card-container div ul li {
   margin-bottom: 20px;
-  color: #2e4571;
+  color: var(--secondary-color);
 }
 
 .registration-card {
@@ -1532,6 +1571,9 @@ strong a {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   max-width: 40%;
 }
+
+
+
 
 .important-text {
   font-size: medium;
@@ -1602,9 +1644,3 @@ strong a {
 /* registration button */
 /* ---END--- */
 
-/* 
-    COLORS USED:  
-  light - #e328ff
-  dark - #300e4b
-  blue - #5369e9
-*/
