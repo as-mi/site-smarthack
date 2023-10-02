@@ -1,7 +1,7 @@
 import counterUp from 'counterup2'
 require( 'waypoints/lib/noframework.waypoints.js' );
 
-var SMARTHACK_DATE = new Date(2022, 10, 5, 11); // 6 noiembrie 2022, ora 12, luna e 0-indexed
+var SMARTHACK_DATE = new Date(2023, 10, 9, 11); // 6 noiembrie 2022, ora 12, luna e 0-indexed
 
 $( document ).ready(function() {
 	var window_height = $(window).height();
@@ -198,12 +198,12 @@ window.addEventListener("scroll", function(){
 	verticalScroll = window.pageYOffset,
 	section1Height = document.querySelector("#section1-container").offsetHeight;
 
-	if(verticalScroll === 0){
-		document.querySelector("nav").style.backgroundColor = "#0a0f18e3";
-	}
-	else{
-		document.querySelector("nav").style.backgroundColor = "#0a0f18";
-	}
+	// if(verticalScroll === 0){
+	// 	document.querySelector("nav").style.backgroundColor = "#0a0f18e3";
+	// }
+	// else{
+	// 	document.querySelector("nav").style.backgroundColor = "#0a0f18";
+	// }
 
 	console.log("here");
 	console.log(verticalScroll, section1Height)
