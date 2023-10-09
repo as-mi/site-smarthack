@@ -28,6 +28,7 @@ body {
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -145,7 +146,8 @@ a:focus {
 #header nav div.row ul li {
   width: auto;
 }
-
+#header nav div.row ul li a:target{ 
+  padding-top:70px; /* = to height of navbar */ margin-top:-70px; }
 #header>nav {
   position: fixed;
   z-index: 1000;
@@ -422,6 +424,8 @@ a:focus {
   text-transform: uppercase;
   align-self: center;
   transition: background-color 300ms ease, border-color 300ms ease;
+  border-radius: 1rem;
+  background-color: #e1e1e188;
 }
 
 #header #section1-container .row:nth-child(2) .button:hover {
@@ -754,6 +758,8 @@ strong a {
   text-decoration: underline !important;
 }
 
+
+
 #section5 .button-inscriere {
   box-sizing: border-box;
   padding: 1% 60px;
@@ -774,6 +780,9 @@ strong a {
   color: white !important;
   text-decoration: none !important;
 }
+
+
+
 
 #section5 #background-sponsor {
   position: absolute;
@@ -1296,6 +1305,9 @@ strong a {
   .mobile-info>.container>.row>div h1 {
     font-size: 11.5vw;
   }
+  .mobile-info>.container>.row>div>a {
+    /* content:url("https://inscriere.smarthack.asmi.ro/"); */
+  }
 
   .mobile-info>.container>.row>div h1>span {
     color: var(--main-color);
@@ -1354,6 +1366,8 @@ strong a {
     text-transform: uppercase;
     border: solid 4px var(--main-color);
     transition: all 300ms ease;
+    border-radius: 1rem;
+    background-color: #e1e1e188
   }
 
   .button-inscriere:hover {
