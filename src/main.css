@@ -16,7 +16,8 @@
 
   --main-color: #a10074;
   --secondary-color: rgb(24, 12, 31);
-  --navbar-color:rgb(24, 12, 31);
+  --white:#fefefe
+  
 }
 
 html,
@@ -110,7 +111,7 @@ a:focus {
 
 #header nav img {
   height: 100%;
-  padding: 15px 50px;
+  padding: 15px 20px;
   box-sizing: border-box;
   display: block;
   max-width: 300px;
@@ -128,7 +129,7 @@ a:focus {
 
 #header nav div#logoHeader {
   width: 30%;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 1s ease;
   cursor: pointer;
 }
@@ -154,7 +155,7 @@ a:focus {
 #header>nav .row {
   height: 100%;
   justify-content: flex-end;
-  width: 70%;
+  width: 100%;
   margin: 0;
   position: relative;
 }
@@ -192,7 +193,7 @@ a:focus {
 
 #header>nav .hamburger {
   position: absolute;
-  width: 80px;
+  width: 60px;
   height: 80px;
   display: flex;
   align-items: center;
@@ -203,6 +204,7 @@ a:focus {
   cursor: pointer;
   transition: all 500ms ease;
   display: none;
+  
 }
 
 #header>nav .hamburger.sticky {
@@ -352,11 +354,16 @@ a:focus {
   border-bottom: solid 5px var(--main-color);
 }
 
+/* #header #section1-container .row:nth-child(2){
+  justify-content: left;
+} */
+
+
 #header #section1-container .row:nth-child(2) .timer {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-left: 3%;
+  padding-left: 0;
 }
 
 #header #section1-container .row:nth-child(2) .timer li {
@@ -665,7 +672,7 @@ a:focus {
 }
 
 #section4 .prise .money {
-  padding-top: 3vh;
+  padding-top: 0;
   font-size: 10vw;
   line-height: 10vw;
   color: #fcfcfc;
@@ -678,6 +685,11 @@ a:focus {
 }
 
 strong a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.faq-card>p>a {
   text-decoration: none;
   color: var(--main-color);
 }
@@ -1070,6 +1082,21 @@ strong a {
 }
 
 @media (max-width: 1200px) {
+
+  body {
+    background-image: url("img/bg-smarthackmobile.jpg");
+    overflow-x: hidden;
+    /* Varule, daca pui pe ambele axe nu mai poti da scroll in pa */
+
+  }
+  #section7 {
+    background-image: url("img/bg-smarthackmobile.jpg");
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+  }
+
   #header nav {
     height: 80px;
   }
@@ -1112,6 +1139,12 @@ strong a {
     background-color: #0a0f18e3;
   } */
 
+  #amr{
+    color: var(--secondary-color);
+    padding: 0;
+    margin-bottom: 2rem;
+    
+  }
   #header nav #menu {
     display: flex;
     justify-content: flex-end;
@@ -1131,12 +1164,40 @@ strong a {
 
 @media (max-width: 980px) {
   #header nav {
-    background-color: transparent;
+    background-color: var(--main-color);
+    height: 4rem;
+    padding:0;
+  }
+  #header nav .hamburger{
+    
+    height: 4rem;
+    padding:0;
   }
 
+  .main-partners>.row{
+    width: 100%;
+   
+    
+  }
+
+  .main-partners>.row>a{
+    padding-top: 20px;
+    width: 80%;
+    margin: auto;
+    
+  }
+  .main-partners>.row>a:first-child{
+    padding-bottom: 20px;
+    
+  }
+
+  
   #header nav div#logoHeader {
     overflow: hidden;
     width: 96px;
+  }
+  #header nav div#logoHeader>img {
+    content: url("/img/logos/smarthack-wide-white-mobile.png");
   }
 
   #header nav #menu {
@@ -1338,7 +1399,7 @@ strong a {
     display: none !important;
   }
 
-  #section1-container>.row #button-inscriere {
+  #section1-container>.row .button-inscriere {
     display: none !important;
   }
 
@@ -1367,8 +1428,12 @@ strong a {
   }
 
   .hamburger {
+    color: var(--white) !important;
+  }
+  .hamburger.active {
     color: var(--secondary-color) !important;
   }
+
 
   .footer a,
   .footer span {
@@ -1400,6 +1465,9 @@ strong a {
   #header #section1-container img {
     width: 80% !important;
     padding-bottom: 60px;
+  }
+  #header #section1-container .row{
+  width: auto;
   }
 
   .mobile-info>.container div {
@@ -1451,7 +1519,7 @@ strong a {
 
   #section4 {
     height: auto !important;
-    min-height: 100%;
+    min-height: 50%;
     padding: 60px 0 30px;
   }
 
@@ -1463,7 +1531,25 @@ strong a {
     top: 0px;
     padding: 30px;
     font-size: 2em;
+    margin-bottom: 0;
   }
+  #section4 .prise>div{
+    display:flex;
+    flex-direction: column;
+  }
+
+  #section4 .prise>div>*{
+    text-align: center;
+  }
+  #section4 .prise>div>a{
+    padding-top: 10%;
+  }
+
+  #section4 .prise>div>a>*{
+    max-width: 60%;
+
+  }
+
 
   #section4>div {
     flex-direction: column;
@@ -1471,7 +1557,11 @@ strong a {
 
   #section4>div .prise {
     width: 100%;
-    padding: 60px 0;
+    /* padding: 60px 0; */
+  }
+  #section4>div>div>.money {
+    /* width: 100%; */
+    padding: 2rem 0;
   }
 
   #section4>div .prise .sau {
@@ -1555,6 +1645,11 @@ strong a {
   padding-bottom: 15px;
   margin-bottom: 70px;
   display: block;
+}
+#amr{
+  color: var(--secondary-color);
+  padding: 0;
+  margin-bottom: 2rem;
 }
 
 #section5 .section-title {
