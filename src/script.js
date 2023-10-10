@@ -37,60 +37,7 @@ $( document ).ready(function() {
         body.stop().animate({scrollTop:0}, 1000, 'swing');
     });
 
-	// $("#menu .despre").on("click",function(){
-	// 	if($(window).width()<768){
-	// 		return;
-	// 	}
-    //     var body = $("html, body");
-    //     var sectionsTop = $('#section2-container').position().top-80;
-    //     body.stop().animate({scrollTop: sectionsTop}, 1000, 'swing');
-    // })
 
-    // $
-
-	
-
-	// $(".button-inscriere").on("click",function(){
-    //     var body = $("html, body");
-	// 	if($(window).width()<768){
-	// 		$(window).scrollTop(0);
-	// 	}
-    //     var section5Top = $('#section5').position().top;
-    //     body.stop().animate({scrollTop: section5Top}, 1000, 'swing');
-    // });
-
-	// $("#menu .inscriere").on("click",function(){
-	// 	if($(window).width()<768){
-	// 		window.location.replace("https://inscriere.smarthack.asmi.ro/");
-	// 	}else{
-	// 		var body = $("html, body");
-	// 		var section5Top = $('#section5').position().top-80;
-	// 		body.stop().animate({scrollTop: section5Top}, 1000, 'swing');
-	// 	}
-        
-    // })
-
-
-
-
-	// $("#menu .parteneri").on("click",function(){
-	// 	if($(window).width()<768){
-	// 		return;
-	// 	}
-    //     var body = $("html, body");
-    //     var section6Top = $('#section6').position().top-80;
-    //     body.stop().animate({scrollTop: section6Top}, 1000, 'swing');
-    // })
-	
-
-    // $("#menu .contact").on("click",function(){
-	// 	if($(window).width()<768){
-	// 		return;
-	// 	}
-    //     var body = $("html, body");
-    //     var section7Top = $('#section7').position().top-80;
-    //     body.stop().animate({scrollTop: section7Top}, 1000, 'swing');
-    // });
 
     var z = $('.timer .zile > span:first-child');
     var o = $('.timer .ore > span:first-child');
@@ -119,7 +66,7 @@ $( document ).ready(function() {
 		z.html(days);
         o.html(hours);
         m.html(minutes);
-        s.html(seconds);
+        // s.html(seconds);
 	}
 
 
