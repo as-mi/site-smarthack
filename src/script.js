@@ -1,7 +1,7 @@
 import counterUp from 'counterup2'
 require( 'waypoints/lib/noframework.waypoints.js' );
 
-var SMARTHACK_DATE = new Date(2021, 10, 6, 12); // 6 noiembrie 2021, ora 12, luna e 0-indexed
+var SMARTHACK_DATE = new Date(2023, 10, 9, 11); // luna e 0-indexed
 
 $( document ).ready(function() {
 	var window_height = $(window).height();
@@ -37,44 +37,7 @@ $( document ).ready(function() {
         body.stop().animate({scrollTop:0}, 1000, 'swing');
     });
 
-    $("#menu .despre").on("click",function(){
-        var body = $("html, body");
-        if($(window).width()<768){
-        	body.stop().animate({scrollTop: 2*window_height-50}, 1000, 'swing');
-        }
-        else
-        	body.stop().animate({scrollTop: window_height+100}, 1000, 'swing');
-    });
 
-    $("#menu .inscriere").on("click",function(){
-        var body = $("html, body");
-        var section5Top = $('#section5').position().top;
-        body.stop().animate({scrollTop: section5Top}, 1000, 'swing');
-	});
-
-	$("#button-inscriere").on("click",function(){
-        var body = $("html, body");
-        var section5Top = $('#section5').position().top;
-        body.stop().animate({scrollTop: section5Top}, 1000, 'swing');
-	});
-
-	$(".button-inscriere").on("click",function(){
-        var body = $("html, body");
-        var section5Top = $('#section5').position().top;
-        body.stop().animate({scrollTop: section5Top}, 1000, 'swing');
-    });
-
-    $("#menu .parteneri").on("click",function(){
-        var body = $("html, body");
-        var section6Top = $('#section6').position().top;
-        body.stop().animate({scrollTop: section6Top}, 1000, 'swing');
-    });
-
-    $("#menu .contact").on("click",function(){
-        var body = $("html, body");
-        var section7Top = $('#section7').position().top-80;
-        body.stop().animate({scrollTop: section7Top}, 1000, 'swing');
-    });
 
     var z = $('.timer .zile > span:first-child');
     var o = $('.timer .ore > span:first-child');
@@ -103,7 +66,7 @@ $( document ).ready(function() {
 		z.html(days);
         o.html(hours);
         m.html(minutes);
-        s.html(seconds);
+        // s.html(seconds);
 	}
 
 
@@ -193,25 +156,25 @@ $( document ).ready(function() {
 
 });
 
-window.addEventListener("scroll", function(){
-	const
-	verticalScroll = window.pageYOffset,
-	section1Height = document.querySelector("#section1-container").offsetHeight;
+// window.addEventListener("scroll", function(){
+// 	const
+// 	verticalScroll = window.pageYOffset,
+// 	section1Height = document.querySelector("#section1-container").offsetHeight;
 
-	if(verticalScroll === 0){
-		document.querySelector("nav").style.backgroundColor = "#0a0f18e3";
-	}
-	else{
-		document.querySelector("nav").style.backgroundColor = "#0a0f18";
-	}
+// 	// if(verticalScroll === 0){
+// 	// 	document.querySelector("nav").style.backgroundColor = "#0a0f18e3";
+// 	// }
+// 	// else{
+// 	// 	document.querySelector("nav").style.backgroundColor = "#0a0f18";
+// 	// }
 
-	console.log("here");
-	console.log(verticalScroll, section1Height)
+// 	console.log("here");
+// 	console.log(verticalScroll, section1Height)
 
-	if(verticalScroll > section1Height*2/3){
-		document.querySelector("#logoHeader").style.opacity = "1";
-	}
-	else{
-		document.querySelector("#logoHeader").style.opacity = "0";
-	}
-})
+// 	if(verticalScroll > section1Height*2/3){
+// 		document.querySelector("#logoHeader").style.opacity = "1";
+// 	}
+// 	else{
+// 		document.querySelector("#logoHeader").style.opacity = "0";
+// 	}
+// })
