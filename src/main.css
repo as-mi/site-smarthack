@@ -491,8 +491,49 @@ a:focus {
   display: none;
 }
 
+div#despreSmarthack{
+  padding:1rem 2rem;
+}
+#despreSmarthack > h3{
+  position: relative;
+  text-align: center;
+  color: var(--main-color);
+  top:2rem;
+  padding-bottom: 15px;
+  margin-bottom: 70px;
+  display: block;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+#despreSmarthack > p{
+  color: #e1e1e1;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+ 
+}
+
+
+#despreSmarthack{
+  position: relative;
+  background-image: url(img/despre.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+#despreSmarthack > p h3{
+  padding:30rem;
+
+  z-index: 2;
+  color: white;
+}
+
 
 #section2-container {
+  
   background-color: #e1e1e1;
   /*padding: 300px 2rem 60px 3rem;*/
   padding: 4rem 10rem;
