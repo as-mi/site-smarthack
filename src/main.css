@@ -16,8 +16,7 @@
 
   --main-color: #a10074;
   --secondary-color: rgb(24, 12, 31);
-  --white:#fefefe
-  
+  --white: #fefefe
 }
 
 html,
@@ -125,7 +124,7 @@ a:focus {
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
-  background-color:var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
 #header nav div#logoHeader {
@@ -146,8 +145,13 @@ a:focus {
 #header nav div.row ul li {
   width: auto;
 }
-#header nav div.row ul li a:target{ 
-  padding-top:70px; /* = to height of navbar */ margin-top:-70px; }
+
+#header nav div.row ul li a:target {
+  padding-top: 70px;
+  /* = to height of navbar */
+  margin-top: -70px;
+}
+
 #header>nav {
   position: fixed;
   z-index: 1000;
@@ -206,7 +210,7 @@ a:focus {
   cursor: pointer;
   transition: all 500ms ease;
   display: none;
-  
+
 }
 
 #header>nav .hamburger.sticky {
@@ -366,6 +370,7 @@ a:focus {
   display: flex;
   /* justify-content: space-between; */
   padding-left: 0;
+
 }
 
 #header #section1-container .row:nth-child(2) .timer li {
@@ -518,7 +523,7 @@ a:focus {
 .faq-card {
   padding-top: 20px;
   /* margin-top: 20px; */
-  
+
   /* margin: 25px;  */
   /* hardcoded colors to match background gradient */
   /* first color is the one matching the background at the top of the card
@@ -530,7 +535,7 @@ a:focus {
   height: 80%;
 }
 
-#section2-container .row.despre-row{
+#section2-container .row.despre-row {
   padding: auto;
 }
 
@@ -557,7 +562,7 @@ a:focus {
   color: white;
 }
 
-.section-where-when .container{
+.section-where-when .container {
   width: fit-content;
 }
 
@@ -930,26 +935,162 @@ strong a {
   vertical-align: middle;
 }
 
-.main-partners{
+/*FREQUENTLY ASKED QUESTIONS*/
+#section3 {
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #203442;
+  color: #f5f5f5;
+}
+
+#section3 h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 4rem 0;
+  color: var(--main-color);
+  text-align: center;
+}
+
+#section3 .faq-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+}
+
+#section3 .faq-column {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+#section3 .faq-new {
+  margin-bottom: 2rem;
+  border-bottom: 0.5px solid #9ea4b1;
+  cursor: pointer;
+}
+
+#section3 .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+#section3 .question h5 {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+#section3 .answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  padding-top: 1rem;
+  line-height: 1.6;
+}
+
+#section3 .answer p {
+  color: #9ea4b1;
+}
+
+.faq-new.active .answer {
+  max-height: 1000px;
+  animation: fade 0.3s ease-in-out;
+}
+
+svg {
+  transition: transform 0.5s ease-in;
+
+}
+
+.faq-new.active svg {
+  transform: rotate(180deg);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+
+/* For tablets (screen width 768px or smaller) */
+@media (max-width: 768px) {
+  #section3 .faq-container {
+    flex-direction: column;
+    gap: 0;
+    /* Remove gap between columns */
+  }
+
+  #section3 .faq-column {
+    width: 80%;
+    align-self: center;
+    /* Make columns full-width */
+    margin-bottom: 1.25rem;
+    /* Add spacing between columns */
+  }
+}
+
+/* For mobile devices (screen width 480px or smaller) */
+@media (max-width: 480px) {
+  #section3 h2 {
+    font-size: 2rem;
+    /* Reduce heading size */
+  }
+
+  #section3 .faq-new {
+    margin-bottom: 1.25rem;
+    /* Slightly reduce spacing */
+  }
+
+  #section3 .question {
+    font-size: 0.5rem;
+    /* Adjust font size for questions */
+  }
+
+  #section3 .question h5 {
+    font-size: 1rem;
+  }
+
+  #section3 .answer {
+    font-size: 0.9rem;
+    /* Adjust font size for answers */
+  }
+}
+
+/****AICI SE TERMINA CE AM FACUT EU (LAURA) ****/
+
+.main-partners {
   display: flex;
   justify-content: space-around;
   text-align: center;
   margin-bottom: 2rem;
 }
-.main-partners a{
- 
-}
 
-.main-partners a{
+.main-partners a {}
+
+.main-partners a {
   margin-top: auto;
 }
 
-.innovation-partners{
-  
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+.innovation-partners {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 
@@ -1098,6 +1239,7 @@ strong a {
     /* Varule, daca pui pe ambele axe nu mai poti da scroll in pa */
 
   }
+
   #section7 {
     background-image: url("img/bg-smarthackmobile.jpg");
     background-position: right;
@@ -1140,7 +1282,7 @@ strong a {
 
 
 @media (min-width: 981px) {
- 
+
   #header #section1-info {
     padding-top: 140px;
   }
@@ -1149,12 +1291,13 @@ strong a {
     background-color: #0a0f18e3;
   } */
 
-  #amr{
+  #amr {
     color: var(--secondary-color);
     padding: 0;
     margin-bottom: 2rem;
-    
+
   }
+
   #header nav #menu {
     display: flex;
     justify-content: flex-end;
@@ -1176,47 +1319,49 @@ strong a {
   #header nav {
     background-color: var(--main-color);
     height: 4rem;
-    padding:0;
+    padding: 0;
   }
-  #header nav .hamburger{
-    
+
+  #header nav .hamburger {
+
     height: 4rem;
-    padding:0;
+    padding: 0;
   }
 
-  .main-partners>.row{
+  .main-partners>.row {
     width: 100%;
-   
-    
+
+
   }
 
-  .main-partners>.row>a{
+  .main-partners>.row>a {
     padding-top: 20px;
     width: 80%;
     margin: auto;
-    
+
   }
 
-  .main-partners:nth-of-type(3)>.row>a:first-child{
-    padding-top:10px; 
+  .main-partners:nth-of-type(3)>.row>a:first-child {
+    padding-top: 10px;
   }
 
-  .main-partners:nth-of-type(3)>.row>a{
-    padding-top:0;
+  .main-partners:nth-of-type(3)>.row>a {
+    padding-top: 0;
     padding-bottom: 20px;
-    
+
   }
 
-  .main-partners:nth-of-type(1)>.row>a:first-child{
+  .main-partners:nth-of-type(1)>.row>a:first-child {
     padding-bottom: 20px;
-    
+
   }
 
-  
+
   #header nav div#logoHeader {
     overflow: hidden;
     width: 96px;
   }
+
   #header nav div#logoHeader>img {
     content: url("/img/logos/smarthack-wide-white-mobile.png");
   }
@@ -1317,6 +1462,7 @@ strong a {
   .mobile-info>.container>.row>div h1 {
     font-size: 11.5vw;
   }
+
   .mobile-info>.container>.row>div>a {
     /* content:url("https://inscriere.smarthack.asmi.ro/"); */
   }
@@ -1456,6 +1602,7 @@ strong a {
   .hamburger {
     color: var(--white) !important;
   }
+
   .hamburger.active {
     color: var(--secondary-color) !important;
   }
@@ -1492,8 +1639,9 @@ strong a {
     width: 80% !important;
     padding-bottom: 60px;
   }
-  #header #section1-container .row{
-  width: auto;
+
+  #header #section1-container .row {
+    width: auto;
   }
 
   .mobile-info>.container div {
@@ -1559,19 +1707,21 @@ strong a {
     font-size: 2em;
     margin-bottom: 0;
   }
-  #section4 .prise>div{
-    display:flex;
+
+  #section4 .prise>div {
+    display: flex;
     flex-direction: column;
   }
 
-  #section4 .prise>div>*{
+  #section4 .prise>div>* {
     text-align: center;
   }
-  #section4 .prise>div>a{
+
+  #section4 .prise>div>a {
     padding-top: 10%;
   }
 
-  #section4 .prise>div>a>*{
+  #section4 .prise>div>a>* {
     max-width: 60%;
 
   }
@@ -1585,6 +1735,7 @@ strong a {
     width: 100%;
     /* padding: 60px 0; */
   }
+
   #section4>div>div>.money {
     /* width: 100%; */
     padding: 2rem 0;
@@ -1672,7 +1823,8 @@ strong a {
   margin-bottom: 70px;
   display: block;
 }
-#amr{
+
+#amr {
   color: var(--secondary-color);
   padding: 0;
   margin-bottom: 2rem;
@@ -1783,13 +1935,14 @@ strong a {
   box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
 }
 
+
 /* registration button */
-/* ---END--- */
+/* ---END--- 
 
 
 @media (min-width: 981px) {
-  .secunde{
+  .secunde {
     display: none !important;
   }
 
-}
+} */

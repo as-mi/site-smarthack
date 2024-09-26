@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "counterup2": "^2.0.2",
+    "deasync": "^0.1.30",
     "waypoints": "^4.0.1"
   },
   "devDependencies": {
