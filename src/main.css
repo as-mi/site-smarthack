@@ -940,7 +940,142 @@ strong a {
   max-width: 100%;
   vertical-align: middle;
 }
+/*FREQUENTLY ASKED QUESTIONS*/
+#section3 {
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #203442;
+  color: #f5f5f5;
+}
 
+#section3 h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 4rem 0;
+  color: var(--main-color);
+  text-align: center;
+}
+
+#section3 .faq-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+}
+
+#section3 .faq-column {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+#section3 .faq-new {
+  margin-bottom: 2rem;
+  border-bottom: 0.5px solid #9ea4b1;
+  cursor: pointer;
+}
+
+#section3 .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+#section3 .question h5 {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+#section3 .answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  padding-top: 1rem;
+  line-height: 1.6;
+}
+
+#section3 .answer p {
+  color: #9ea4b1;
+}
+
+.faq-new.active .answer {
+  max-height: 1000px;
+  animation: fade 0.3s ease-in-out;
+}
+
+svg {
+  transition: transform 0.5s ease-in;
+
+}
+
+.faq-new.active svg {
+  transform: rotate(180deg);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+
+/* For tablets (screen width 768px or smaller) */
+@media (max-width: 768px) {
+  #section3 .faq-container {
+    flex-direction: column;
+    gap: 0;
+    /* Remove gap between columns */
+  }
+
+  #section3 .faq-column {
+    width: 80%;
+    align-self: center;
+    /* Make columns full-width */
+    margin-bottom: 1.25rem;
+    /* Add spacing between columns */
+  }
+}
+
+/* For mobile devices (screen width 480px or smaller) */
+@media (max-width: 480px) {
+  #section3 h2 {
+    font-size: 2rem;
+    /* Reduce heading size */
+  }
+
+  #section3 .faq-new {
+    margin-bottom: 1.25rem;
+    /* Slightly reduce spacing */
+  }
+
+  #section3 .question {
+    font-size: 0.5rem;
+    /* Adjust font size for questions */
+  }
+
+  #section3 .question h5 {
+    font-size: 1rem;
+  }
+
+  #section3 .answer {
+    font-size: 0.9rem;
+    /* Adjust font size for answers */
+  }
+}
+
+/****AICI SE TERMINA CE AM FACUT EU (LAURA) ****/
 .main-partners{
   display: flex;
   justify-content: space-around;
