@@ -1309,6 +1309,9 @@ svg {
   #start-concurs {
     font-size: 3vw;
   }
+  #containerTestimoniale .cardTestimoniale{
+    border-radius: 3% 3% 3% 3%;
+  }
 }
 
 @media (min-width: 981px) and (max-width: 1200px) {
@@ -1925,6 +1928,45 @@ svg {
   .registration-card:nth-child(2) {
     background: linear-gradient(#e1e1e1 0%, #e1e1e1 100%);
   }
+}
+
+#containerTestimoniale{
+  background-color: var(--main-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5vh 5vw 5vh 5vw;
+}
+
+.cardTestimoniale{
+  display: flex;
+  flex-direction: column;
+  height: 35em;
+  max-width: 18em;
+  background-color: #FAF9F6;
+  padding: 2vw;
+  padding-bottom: 0%;
+  margin: 1em;
+  border-radius: 3% 3% 3% 25%;
+}
+
+.cardTestimoniale:nth-child(2n){
+  border-radius: 3% 10% 3% 10%;
+}
+
+.ghilimeleTestimoniale{
+  width: 2em;
+  opacity: 7%;
+}
+
+.ghilimeleTestimoniale:nth-of-type(2){
+  align-self: flex-end;
+  justify-self: center;
+  transform: rotate(180deg);
+}
+
+.mesajCardTestimoniale{
+  text-align: center;
 }
 
 /* registration button */
