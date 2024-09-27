@@ -1938,8 +1938,20 @@ svg {
   }
 }
 
-#containerTestimoniale{
+#testimoniale{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--main-color);
+  padding: 2em;
+}
+
+#testimoniale h2{
+  color: white;
+}
+
+#containerTestimoniale{
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
