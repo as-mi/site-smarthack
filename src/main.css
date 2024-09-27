@@ -16,8 +16,7 @@
 
   --main-color: #a10074;
   --secondary-color: rgb(24, 12, 31);
-  --white:#fefefe
-  
+  --white: #fefefe
 }
 
 html,
@@ -125,7 +124,7 @@ a:focus {
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
-  background-color:var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
 #header nav div#logoHeader {
@@ -146,21 +145,27 @@ a:focus {
 #header nav div.row ul li {
   width: auto;
 }
-#header nav div.row ul li a:target{ 
-  padding-top:70px; /* = to height of navbar */ margin-top:-70px; }
+
+#header nav div.row ul li a:target {
+  padding-top: 70px;
+  /* = to height of navbar */
+  margin-top: -70px;
+}
+
 #header>nav {
   position: fixed;
   z-index: 1000;
   transition: background-color 300ms ease;
 }
-.inscriere{
+
+.inscriere {
   box-sizing: border-box;
   border: solid 4px var(--main-color);
   border-radius: 1rem;
-  height: 2.9375rem!important;
+  height: 2.9375rem !important;
 }
 
-.inscriere:hover{
+.inscriere:hover {
   background-color: var(--main-color);
   color: #e1e1e1 !important;
 }
@@ -217,7 +222,7 @@ a:focus {
   cursor: pointer;
   transition: all 500ms ease;
   display: none;
-  
+
 }
 
 #header>nav .hamburger.sticky {
@@ -491,14 +496,15 @@ a:focus {
   display: none;
 }
 
-div#despreSmarthack{
-  padding:1rem 2rem;
+div#despreSmarthack {
+  padding: 1rem 2rem;
 }
-#despreSmarthack > h3{
+
+#despreSmarthack>h3 {
   position: relative;
   text-align: center;
   color: var(--main-color);
-  top:2rem;
+  top: 2rem;
   padding-bottom: 15px;
   margin-bottom: 70px;
   display: block;
@@ -506,26 +512,26 @@ div#despreSmarthack{
   font-size: 2.5rem;
 }
 
-#despreSmarthack > p{
+#despreSmarthack>p {
   color: #e1e1e1;
   font-size: 1.5rem;
   text-align: center;
   margin-bottom: 30px;
- 
+
 }
 
 
-#despreSmarthack{
+#despreSmarthack {
   position: relative;
-  background-image: url(img/despre.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100%;
+  background-image: url(img/despre.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
 }
 
-#despreSmarthack > p h3{
-  padding:30rem;
+#despreSmarthack>p h3 {
+  padding: 30rem;
 
   z-index: 2;
   color: white;
@@ -533,7 +539,7 @@ div#despreSmarthack{
 
 
 #section2-container {
-  
+
   background-color: #e1e1e1;
   /*padding: 300px 2rem 60px 3rem;*/
   padding: 4rem 10rem;
@@ -570,7 +576,7 @@ div#despreSmarthack{
 .faq-card {
   padding-top: 20px;
   /* margin-top: 20px; */
-  
+
   /* margin: 25px;  */
   /* hardcoded colors to match background gradient */
   /* first color is the one matching the background at the top of the card
@@ -582,7 +588,7 @@ div#despreSmarthack{
   height: 80%;
 }
 
-#section2-container .row.despre-row{
+#section2-container .row.despre-row {
   padding: auto;
 }
 
@@ -609,7 +615,7 @@ div#despreSmarthack{
   color: white;
 }
 
-.section-where-when .container{
+.section-where-when .container {
   width: fit-content;
 }
 
@@ -970,8 +976,6 @@ strong a {
   z-index: 0;
 }
 
-
-
 #section6 section>a {
   margin: 1rem 1.5rem 3rem;
 }
@@ -981,6 +985,34 @@ strong a {
   max-width: 100%;
   vertical-align: middle;
 }
+
+.partners h1 {
+  text-align: center;
+}
+
+.partners h2 {
+  text-align: center;
+}
+
+.main-partners,
+.innovation-partners,
+.recruiter-partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.main-partners img,
+.innovation-partners img,
+.recruiter-partners img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
 /*FREQUENTLY ASKED QUESTIONS*/
 #section3 {
   min-height: 100vh;
@@ -1117,26 +1149,25 @@ svg {
 }
 
 /****AICI SE TERMINA CE AM FACUT EU (LAURA) ****/
-.main-partners{
+.main-partners {
   display: flex;
   justify-content: space-around;
   text-align: center;
   margin-bottom: 2rem;
 }
-.main-partners a{
- 
-}
 
-.main-partners a{
+.main-partners a {}
+
+.main-partners a {
   margin-top: auto;
 }
 
-.innovation-partners{
-  
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+.innovation-partners {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 
@@ -1285,6 +1316,7 @@ svg {
     /* Varule, daca pui pe ambele axe nu mai poti da scroll in pa */
 
   }
+
   #section7 {
     background-image: url("img/bg-smarthackmobile.jpg");
     background-position: right;
@@ -1327,7 +1359,7 @@ svg {
 
 
 @media (min-width: 981px) {
- 
+
   #header #section1-info {
     padding-top: 140px;
   }
@@ -1336,12 +1368,13 @@ svg {
     background-color: #0a0f18e3;
   } */
 
-  #amr{
+  #amr {
     color: var(--secondary-color);
     padding: 0;
     margin-bottom: 2rem;
-    
+
   }
+
   #header nav #menu {
     display: flex;
     justify-content: flex-end;
@@ -1363,47 +1396,49 @@ svg {
   #header nav {
     background-color: var(--main-color);
     height: 4rem;
-    padding:0;
+    padding: 0;
   }
-  #header nav .hamburger{
-    
+
+  #header nav .hamburger {
+
     height: 4rem;
-    padding:0;
+    padding: 0;
   }
 
-  .main-partners>.row{
+  .main-partners>.row {
     width: 100%;
-   
-    
+
+
   }
 
-  .main-partners>.row>a{
+  .main-partners>.row>a {
     padding-top: 20px;
     width: 80%;
     margin: auto;
-    
+
   }
 
-  .main-partners:nth-of-type(3)>.row>a:first-child{
-    padding-top:10px; 
+  .main-partners:nth-of-type(3)>.row>a:first-child {
+    padding-top: 10px;
   }
 
-  .main-partners:nth-of-type(3)>.row>a{
-    padding-top:0;
+  .main-partners:nth-of-type(3)>.row>a {
+    padding-top: 0;
     padding-bottom: 20px;
-    
+
   }
 
-  .main-partners:nth-of-type(1)>.row>a:first-child{
+  .main-partners:nth-of-type(1)>.row>a:first-child {
     padding-bottom: 20px;
-    
+
   }
 
-  
+
   #header nav div#logoHeader {
     overflow: hidden;
     width: 96px;
   }
+
   #header nav div#logoHeader>img {
     content: url("/img/logos/smarthack-wide-white-mobile.png");
   }
@@ -1504,6 +1539,7 @@ svg {
   .mobile-info>.container>.row>div h1 {
     font-size: 11.5vw;
   }
+
   .mobile-info>.container>.row>div>a {
     /* content:url("https://inscriere.smarthack.asmi.ro/"); */
   }
@@ -1643,6 +1679,7 @@ svg {
   .hamburger {
     color: var(--white) !important;
   }
+
   .hamburger.active {
     color: var(--secondary-color) !important;
   }
@@ -1679,8 +1716,9 @@ svg {
     width: 80% !important;
     padding-bottom: 60px;
   }
-  #header #section1-container .row{
-  width: auto;
+
+  #header #section1-container .row {
+    width: auto;
   }
 
   .mobile-info>.container div {
@@ -1746,19 +1784,21 @@ svg {
     font-size: 2em;
     margin-bottom: 0;
   }
-  #section4 .prise>div{
-    display:flex;
+
+  #section4 .prise>div {
+    display: flex;
     flex-direction: column;
   }
 
-  #section4 .prise>div>*{
+  #section4 .prise>div>* {
     text-align: center;
   }
-  #section4 .prise>div>a{
+
+  #section4 .prise>div>a {
     padding-top: 10%;
   }
 
-  #section4 .prise>div>a>*{
+  #section4 .prise>div>a>* {
     max-width: 60%;
 
   }
@@ -1772,6 +1812,7 @@ svg {
     width: 100%;
     /* padding: 60px 0; */
   }
+
   #section4>div>div>.money {
     /* width: 100%; */
     padding: 2rem 0;
@@ -1859,7 +1900,8 @@ svg {
   margin-bottom: 70px;
   display: block;
 }
-#amr{
+
+#amr {
   color: var(--secondary-color);
   padding: 0;
   margin-bottom: 2rem;
@@ -1975,7 +2017,7 @@ svg {
 
 
 @media (min-width: 981px) {
-  .secunde{
+  .secunde {
     display: none !important;
   }
 
