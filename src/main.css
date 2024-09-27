@@ -1968,8 +1968,8 @@ svg {
 .cardTestimoniale{
   display: flex;
   flex-direction: column;
-  height: 36em;
-  max-width: 18em;
+  height: 30em;
+  max-width: 25em;
   background-color: #FAF9F6;
   padding: 1.5em;
   margin: 1em;
@@ -2045,13 +2045,6 @@ svg {
 /* registration button */
 /* ---END--- */
 
-
-@media (min-width: 981px) {
-  .secunde {
-    display: none !important;
-  }
-
-}
 
 @media (max-width: 1085px ) and (min-width: 768px){
   .cardTestimoniale:last-child{
