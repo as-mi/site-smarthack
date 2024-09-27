@@ -16,8 +16,7 @@
 
   --main-color: #a10074;
   --secondary-color: rgb(24, 12, 31);
-  --white:#fefefe
-  
+  --white: #fefefe
 }
 
 html,
@@ -125,7 +124,7 @@ a:focus {
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
-  background-color:var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
 #header nav div#logoHeader {
@@ -146,21 +145,27 @@ a:focus {
 #header nav div.row ul li {
   width: auto;
 }
-#header nav div.row ul li a:target{ 
-  padding-top:70px; /* = to height of navbar */ margin-top:-70px; }
+
+#header nav div.row ul li a:target {
+  padding-top: 70px;
+  /* = to height of navbar */
+  margin-top: -70px;
+}
+
 #header>nav {
   position: fixed;
   z-index: 1000;
   transition: background-color 300ms ease;
 }
-.inscriere{
+
+.inscriere {
   box-sizing: border-box;
   border: solid 4px var(--main-color);
   border-radius: 1rem;
-  height: 2.9375rem!important;
+  height: 2.9375rem !important;
 }
 
-.inscriere:hover{
+.inscriere:hover {
   background-color: var(--main-color);
   color: #e1e1e1 !important;
 }
@@ -217,7 +222,7 @@ a:focus {
   cursor: pointer;
   transition: all 500ms ease;
   display: none;
-  
+
 }
 
 #header>nav .hamburger.sticky {
@@ -367,26 +372,6 @@ a:focus {
   border-bottom: solid 5px var(--main-color);
 }
 
-/* #header #section1-container .row:nth-child(2){
-  justify-content: left;
-} */
-
-
-#header #section1-container .row:nth-child(2) .timer {
-  width: 70%;
-  display: flex;
-  /* justify-content: space-between; */
-  padding-left: 0;
-}
-
-#header #section1-container .row:nth-child(2) .timer li {
-  color: var(--secondary-color);
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  text-transform: uppercase;
-}
-
 .premiu>div {
   margin: auto;
 }
@@ -491,59 +476,93 @@ a:focus {
   display: none;
 }
 
-div#despreSmarthack{
-  padding:1rem 2rem;
+section#despreSmarthack {
+  padding: 2rem 12rem;
 }
-#despreSmarthack > h3{
+
+#despreSmarthack>h2 {
   position: relative;
   text-align: center;
   color: var(--main-color);
-  top:2rem;
+  top: 2rem;
   padding-bottom: 15px;
   margin-bottom: 70px;
   display: block;
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
-#despreSmarthack > p{
+#despreSmarthack>h2 span {
+  font-size: 3rem;
+  font-weight: 400 !important;
+  color: #e1e1e1;
+}
+
+#despreSmarthack>p {
   color: #e1e1e1;
   font-size: 1.5rem;
   text-align: center;
   margin-bottom: 30px;
- 
 }
 
 
-#despreSmarthack{
+#despreSmarthack {
   position: relative;
-  background-image: url(img/despre.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100%;
+  background-image: url(img/despre.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: auto;
 }
 
-#despreSmarthack > p h3{
-  padding:30rem;
-
+#despreSmarthack>p h3 {
+  padding: 30rem;
   z-index: 2;
   color: white;
 }
 
+@media (max-width:1000px) {
+  section#despreSmarthack {
+    padding: 2rem 2rem;
+  }
+
+  #despreSmarthack>h2 {
+    position: relative;
+    text-align: center;
+    color: var(--main-color);
+    top: 2rem;
+    padding-bottom: 15px;
+    margin-bottom: 70px;
+    display: block;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+
+  #despreSmarthack>h2 span {
+    font-size: 3rem;
+    font-weight: 400 !important;
+    color: #e1e1e1;
+  }
+
+  #despreSmarthack>p {
+    color: #e1e1e1;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
 
 #section2-container {
-  
+
   background-color: #e1e1e1;
-  /*padding: 300px 2rem 60px 3rem;*/
-  padding: 4rem 10rem;
+  padding: 2rem 10rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
 #section2-container .row.goals-row {
-  margin-bottom: 60px;
+  /* margin-bottom: 40px; */
 }
 
 #section2-container .row.goals-row>div {
@@ -570,7 +589,7 @@ div#despreSmarthack{
 .faq-card {
   padding-top: 20px;
   /* margin-top: 20px; */
-  
+
   /* margin: 25px;  */
   /* hardcoded colors to match background gradient */
   /* first color is the one matching the background at the top of the card
@@ -582,7 +601,7 @@ div#despreSmarthack{
   height: 80%;
 }
 
-#section2-container .row.despre-row{
+#section2-container .row.despre-row {
   padding: auto;
 }
 
@@ -609,7 +628,7 @@ div#despreSmarthack{
   color: white;
 }
 
-.section-where-when .container{
+.section-where-when .container {
   width: fit-content;
 }
 
@@ -751,12 +770,10 @@ strong a {
 }
 
 #section5 {
-
   /* font-size: x-large; */
   position: relative;
   padding-top: 50px;
   z-index: 99;
-  min-height: 60%;
   background: #ffffff;
   /* Old browsers */
   background: -webkit-linear-gradient(#ffffff 0%,
@@ -782,132 +799,86 @@ strong a {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
-#section5>div {
-  box-sizing: border-box;
-  padding: 0 15px;
-}
-
-#section5 .container {
-  height: 100%;
+#section5 {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-#section5 h1,
-#section5 h2,
-#section5 p,
-#section5 .teams-list {
-  color: var(--secondary-color);
-}
-
-#section5 a {
-  color: #4065b4 !important;
-}
-
-#section5 a:hover {
-  text-decoration: underline !important;
-}
-
-
-
-#section5 .button-inscriere {
-  box-sizing: border-box;
-  padding: 1% 60px;
-  border: solid 5px var(--main-color);
-  color: var(--main-color) !important;
+#section5 .section-title {
+  font-size: 3rem;
   font-weight: 700;
-  font-size: 2vw;
-  cursor: pointer;
-  display: block;
-  text-align: center;
+  color: var(--main-color);
+  margin-top: 1rem;
   text-transform: uppercase;
-  align-self: center;
-  transition: background-color 300ms ease, color 300ms ease;
+  letter-spacing: 2px;
 }
 
-#section5 .button-inscriere:hover {
-  background-color: var(--main-color);
-  color: white !important;
-  text-decoration: none !important;
-}
-
-
-
-
-#section5 #background-sponsor {
-  position: absolute;
-  z-index: 90;
-  width: 100%;
-  height: 100%;
-  background-attachment: fixed;
-  background-size: 60%;
-  background-repeat: no-repeat;
-}
-
-#section5 .container {
-  position: relative;
-  z-index: 99;
-}
-
-#section5 .container .partener-box>div {
-  width: 100%;
-  position: relative;
-}
-
-#section5 .container .partener-box>div>div {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  padding: 30px;
-  transform-style: preserve-3d;
-  transition: background-color 300ms ease;
-}
-
-#section5 .container .partener-box>div>div>img {
-  max-height: 100px;
-  max-width: 80%;
-  width: auto;
-  transform: translateZ(50px);
-}
-
-#section5 .container .partener-box>div>div:hover {
-  background-color: white;
-}
-
-#section5 .registration {
-  background-color: darkblue;
-  color: white;
-  border-radius: 5px;
-  padding: 0.5rem;
+#section5 .timer {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
   margin-top: 2rem;
-}
-
-#section5 .partener-box {
-  margin: 1rem;
-}
-
-#section5 .partener-box a {
-  color: white;
-  text-decoration: none;
-}
-
-#section5 h2 {
-  text-align: center;
-}
-
-#section5 .teams-list {
   width: 100%;
-  text-align: center;
+  max-width: 600px;
 }
 
-#section5 .teams-list>div {
-  margin-bottom: 30px;
+#section5 .timer li {
+  text-align: center;
+  margin: 0 15px;
 }
+
+#section5 .timer li .number {
+  display: block;
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--main-color);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#section5 .timer li .label {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #333;
+  margin-top: 0.5rem;
+}
+
+#section5 .bi-hourglass-split {
+  color: var(--main-color);
+  animation: pulse 2s infinite;
+}
+
+/* Pulsating effect for the hourglass icon */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  #section5 .section-title {
+    font-size: 2.5rem;
+  }
+
+  #section5 .timer li .number {
+    font-size: 3rem;
+  }
+}
+
 
 #section6 {
   min-height: 100%;
@@ -970,8 +941,6 @@ strong a {
   z-index: 0;
 }
 
-
-
 #section6 section>a {
   margin: 1rem 1.5rem 3rem;
 }
@@ -981,6 +950,34 @@ strong a {
   max-width: 100%;
   vertical-align: middle;
 }
+
+.partners h1 {
+  text-align: center;
+}
+
+.partners h2 {
+  text-align: center;
+}
+
+.main-partners,
+.innovation-partners,
+.recruiter-partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.main-partners img,
+.innovation-partners img,
+.recruiter-partners img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
 /*FREQUENTLY ASKED QUESTIONS*/
 #section3 {
   min-height: 100vh;
@@ -1117,26 +1114,25 @@ svg {
 }
 
 /****AICI SE TERMINA CE AM FACUT EU (LAURA) ****/
-.main-partners{
+.main-partners {
   display: flex;
   justify-content: space-around;
   text-align: center;
   margin-bottom: 2rem;
 }
-.main-partners a{
- 
-}
 
-.main-partners a{
+.main-partners a {}
+
+.main-partners a {
   margin-top: auto;
 }
 
-.innovation-partners{
-  
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+.innovation-partners {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 
@@ -1285,6 +1281,7 @@ svg {
     /* Varule, daca pui pe ambele axe nu mai poti da scroll in pa */
 
   }
+
   #section7 {
     background-image: url("img/bg-smarthackmobile.jpg");
     background-position: right;
@@ -1327,7 +1324,7 @@ svg {
 
 
 @media (min-width: 981px) {
- 
+
   #header #section1-info {
     padding-top: 140px;
   }
@@ -1336,12 +1333,13 @@ svg {
     background-color: #0a0f18e3;
   } */
 
-  #amr{
+  #amr {
     color: var(--secondary-color);
     padding: 0;
     margin-bottom: 2rem;
-    
+
   }
+
   #header nav #menu {
     display: flex;
     justify-content: flex-end;
@@ -1363,47 +1361,49 @@ svg {
   #header nav {
     background-color: var(--main-color);
     height: 4rem;
-    padding:0;
+    padding: 0;
   }
-  #header nav .hamburger{
-    
+
+  #header nav .hamburger {
+
     height: 4rem;
-    padding:0;
+    padding: 0;
   }
 
-  .main-partners>.row{
+  .main-partners>.row {
     width: 100%;
-   
-    
+
+
   }
 
-  .main-partners>.row>a{
+  .main-partners>.row>a {
     padding-top: 20px;
     width: 80%;
     margin: auto;
-    
+
   }
 
-  .main-partners:nth-of-type(3)>.row>a:first-child{
-    padding-top:10px; 
+  .main-partners:nth-of-type(3)>.row>a:first-child {
+    padding-top: 10px;
   }
 
-  .main-partners:nth-of-type(3)>.row>a{
-    padding-top:0;
+  .main-partners:nth-of-type(3)>.row>a {
+    padding-top: 0;
     padding-bottom: 20px;
-    
+
   }
 
-  .main-partners:nth-of-type(1)>.row>a:first-child{
+  .main-partners:nth-of-type(1)>.row>a:first-child {
     padding-bottom: 20px;
-    
+
   }
 
-  
+
   #header nav div#logoHeader {
     overflow: hidden;
     width: 96px;
   }
+
   #header nav div#logoHeader>img {
     content: url("/img/logos/smarthack-wide-white-mobile.png");
   }
@@ -1504,6 +1504,7 @@ svg {
   .mobile-info>.container>.row>div h1 {
     font-size: 11.5vw;
   }
+
   .mobile-info>.container>.row>div>a {
     /* content:url("https://inscriere.smarthack.asmi.ro/"); */
   }
@@ -1643,6 +1644,7 @@ svg {
   .hamburger {
     color: var(--white) !important;
   }
+
   .hamburger.active {
     color: var(--secondary-color) !important;
   }
@@ -1679,8 +1681,9 @@ svg {
     width: 80% !important;
     padding-bottom: 60px;
   }
-  #header #section1-container .row{
-  width: auto;
+
+  #header #section1-container .row {
+    width: auto;
   }
 
   .mobile-info>.container div {
@@ -1746,19 +1749,21 @@ svg {
     font-size: 2em;
     margin-bottom: 0;
   }
-  #section4 .prise>div{
-    display:flex;
+
+  #section4 .prise>div {
+    display: flex;
     flex-direction: column;
   }
 
-  #section4 .prise>div>*{
+  #section4 .prise>div>* {
     text-align: center;
   }
-  #section4 .prise>div>a{
+
+  #section4 .prise>div>a {
     padding-top: 10%;
   }
 
-  #section4 .prise>div>a>*{
+  #section4 .prise>div>a>* {
     max-width: 60%;
 
   }
@@ -1772,6 +1777,7 @@ svg {
     width: 100%;
     /* padding: 60px 0; */
   }
+
   #section4>div>div>.money {
     /* width: 100%; */
     padding: 2rem 0;
@@ -1859,7 +1865,8 @@ svg {
   margin-bottom: 70px;
   display: block;
 }
-#amr{
+
+#amr {
   color: var(--secondary-color);
   padding: 0;
   margin-bottom: 2rem;
@@ -1975,7 +1982,7 @@ svg {
 
 
 @media (min-width: 981px) {
-  .secunde{
+  .secunde {
     display: none !important;
   }
 
