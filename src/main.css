@@ -1578,6 +1578,17 @@ svg {
   #start-concurs {
     font-size: 5vw;
   }
+
+  #containerTestimoniale{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #containerTestimoniale .cardTestimoniale{
+    height: fit-content;
+    max-width: none;
+    width: 70vw;
+  }
 }
 
 @media screen and (max-width: 767px) and (orientation: portrait) {
@@ -1934,6 +1945,60 @@ svg {
   }
 }
 
+#testimoniale{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--main-color);
+  padding: 2em;
+}
+
+#testimoniale h2{
+  color: white;
+}
+
+#containerTestimoniale{
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5vh 5vw 5vh 5vw;
+}
+
+.cardTestimoniale{
+  display: flex;
+  flex-direction: column;
+  height: 36em;
+  max-width: 18em;
+  background-color: #FAF9F6;
+  padding: 1.5em;
+  margin: 1em;
+  border-radius: 3% 3% 3% 15%;
+}
+
+.titluCardTestimoniale{
+  margin-bottom: 1em;
+}
+
+.cardTestimoniale:nth-child(2n){
+  border-radius: 3% 10% 3% 10%;
+}
+
+.ghilimeleTestimoniale{
+  width: 2em;
+  opacity: 7%;
+}
+
+.ghilimeleTestimoniale:nth-of-type(2){
+  align-self: flex-end;
+  justify-self: center;
+  transform: rotate(180deg);
+}
+
+.mesajCardTestimoniale{
+  text-align: center;
+}
+
 /* registration button */
 /* ---BEGIN--- */
 
@@ -1986,4 +2051,16 @@ svg {
     display: none !important;
   }
 
+}
+
+@media (max-width: 1085px ) and (min-width: 768px){
+  .cardTestimoniale:last-child{
+    width: 50vw;
+    max-width: 100%;
+    height: fit-content;
+  }
+
+  .cardTestimoniale{
+    height: 30em;
+  }
 }
