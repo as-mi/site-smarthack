@@ -1309,9 +1309,6 @@ svg {
   #start-concurs {
     font-size: 3vw;
   }
-  #containerTestimoniale .cardTestimoniale{
-    border-radius: 3% 3% 3% 3%;
-  }
 }
 
 @media (min-width: 981px) and (max-width: 1200px) {
@@ -1579,6 +1576,17 @@ svg {
 
   #start-concurs {
     font-size: 5vw;
+  }
+
+  #containerTestimoniale{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #containerTestimoniale .cardTestimoniale{
+    height: fit-content;
+    max-width: none;
+    width: 70vw;
   }
 }
 
@@ -1941,13 +1949,16 @@ svg {
 .cardTestimoniale{
   display: flex;
   flex-direction: column;
-  height: 35em;
+  height: 36em;
   max-width: 18em;
   background-color: #FAF9F6;
   padding: 2vw;
-  padding-bottom: 0%;
   margin: 1em;
-  border-radius: 3% 3% 3% 25%;
+  border-radius: 3% 3% 3% 15%;
+}
+
+.titluCardTestimoniale{
+  margin-bottom: 1em;
 }
 
 .cardTestimoniale:nth-child(2n){
@@ -2021,4 +2032,16 @@ svg {
     display: none !important;
   }
 
+}
+
+@media (max-width: 1085px ) and (min-width: 768px){
+  .cardTestimoniale:last-child{
+    width: 50vw;
+    max-width: 100%;
+    height: fit-content;
+  }
+
+  .cardTestimoniale{
+    height: 30em;
+  }
 }
