@@ -1,18 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  /* scroll-behavior: smooth; */
-
-  /* 
-    COLORS USED:  
-  light - #e328ff
-  dark - #300e4b
-  blue - #5369e9
-
-  alb -fefefe
-  light pink: 6a4d72
-  pretty pink: ad7ab9
-*/
 
   --main-color: #af2264;
   --secondary-color: #150828;
@@ -33,6 +21,15 @@ html {
 }
 
 body {
+  background-color: #e1e1e1;
+  /*background-image: url("img/bg-smarthack.jpg");*/
+  background-position: right;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+#header {
   background-color: #e1e1e1;
   background-image: url("img/bg-smarthack.jpg");
   background-position: right;
@@ -625,51 +622,110 @@ section#despreSmarthack {
   color: #203442;
 }
 
+
 .section-where-when {
-  background-color: var(--secondary-color);
-  padding: 60px 0;
+  position: relative;
+  background-image: url('img/bg-ai.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 50px 0;
   color: white;
 }
 
-.section-where-when .container {
-  width: fit-content;
+.section-where-when .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hsla(264, 65%, 9%, 0.877);
+  z-index: 1;
 }
 
+.section-where-when .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+
 .section-where-when h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 4rem 0;
+  color: white;
+}
+
+.middle {
   text-align: center;
   margin-bottom: 30px;
 }
 
-.section-where-when h3 {
-  font-size: 22px;
+.program-wrapper {
+  margin-top: 5rem;
+  margin-left: 10rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
 }
 
-.section-where-when p {
-  font-size: 18px;
+.program-grid {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.section-where-when h3:not(:first-child) {
-  margin-top: 30px;
+.program-grid h3 {
+  margin-bottom: 10px;
+  font-size: 1.7em;
 }
 
-.section-where-when .program {
-  width: 100%;
-  box-sizing: border-box;
-  padding-left: 15px !important;
+ul.program {
+  list-style-type: none;
+  padding: 0;
 }
 
-.section-where-when .program>li {
+.program li {
   display: flex;
+  margin-bottom: 10px;
 }
 
-.section-where-when .program>li .program-ora {
-  width: 120px;
-  max-width: 120px;
+.program-ora {
   min-width: 120px;
+  font-weight: bold;
 }
 
-.section-where-when .program>li:last-child p {
-  margin-bottom: 0;
+.program li div {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .program-wrapper {
+    margin-top: 5rem;
+    margin-left: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .program-wrapper {
+    grid-template-columns: 1fr;
+    margin-right: 0rem;
+    margin-left: 2rem;
+
+  }
+
+  .program-wrapper p {
+    font-size: 1.05rem;
+  }
 }
 
 .section2-location {
@@ -740,13 +796,12 @@ section#despreSmarthack {
 
 #section4>p {
   width: 25%;
-  margin: 0 auto;
 }
 
 #section4 h2 {
   font-size: 3rem;
   font-weight: bold;
-  margin: 4rem 0;
+  margin: 0rem 0;
   color: white;
   text-align: center;
 }
@@ -1219,40 +1274,30 @@ svg {
   }
 }
 
-/* MEDIA QUERIES FOR RESPONSIVENESS */
-
-/* For tablets (screen width 768px or smaller) */
 @media (max-width: 768px) {
   #section3 .faq-container {
     flex-direction: column;
     gap: 0;
-    /* Remove gap between columns */
   }
 
   #section3 .faq-column {
     width: 80%;
     align-self: center;
-    /* Make columns full-width */
     margin-bottom: 1.25rem;
-    /* Add spacing between columns */
   }
 }
 
-/* For mobile devices (screen width 480px or smaller) */
 @media (max-width: 480px) {
   #section3 h2 {
     font-size: 2rem;
-    /* Reduce heading size */
   }
 
   #section3 .faq-new {
     margin-bottom: 1.25rem;
-    /* Slightly reduce spacing */
   }
 
   #section3 .question {
     font-size: 0.5rem;
-    /* Adjust font size for questions */
   }
 
   #section3 .question h5 {
@@ -1261,11 +1306,9 @@ svg {
 
   #section3 .answer {
     font-size: 1.2rem;
-    /* Adjust font size for answers */
   }
 }
 
-/****AICI SE TERMINA CE AM FACUT EU (LAURA) ****/
 .main-partners {
   display: flex;
   justify-content: space-around;
@@ -1321,12 +1364,13 @@ svg {
 }
 
 #section7 {
-  background-image: url("img/bg-smarthack.jpg");
+  background-image: url("img/poza_grup.jpg");
   background-position: right;
   background-size: cover;
   background-attachment: fixed;
-  height: 100%;
+  height: auto;
 }
+
 
 #section7>div {
   width: 100%;
@@ -1744,7 +1788,7 @@ svg {
   #containerTestimoniale .cardTestimoniale {
     height: fit-content;
     max-width: none;
-    width: 70vw;
+    width: 87vw;
   }
 }
 
@@ -1799,10 +1843,6 @@ svg {
 
   #section2-container {
     margin-top: 120px !important;
-  }
-
-  .section-where-when .row>div:not(:last-child) {
-    margin-bottom: 30px;
   }
 
   #whiteBackground-substitution {
@@ -2018,11 +2058,6 @@ svg {
 /*# sourceMappingURL=main.css.map */
 
 /* INSCRIERI CSS */
-
-#socials {
-  text-align: center;
-}
-
 #section5 p {
   margin-bottom: 20px;
 }
@@ -2066,44 +2101,6 @@ svg {
   color: var(--secondary-color);
 }
 
-.registration-card {
-  padding: 24px;
-  margin: 30px;
-  /* hardcoded colors to match background gradient */
-  /* first color is the one matching the background at the top of the card
-      and second the one matching the background at the bottom of the card */
-  background: linear-gradient(#ededee 0%, #e0e0e0 100%);
-  border-radius: 12px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  max-width: 90%;
-}
-
-
-
-
-.important-text {
-  font-size: medium;
-  font-weight: bold;
-}
-
-@media (max-width: 767px) {
-  .card-container {
-    flex-direction: column;
-  }
-
-  .registration-card {
-    max-width: 100%;
-  }
-
-  .registration-card:nth-child(1) {
-    background: linear-gradient(#f5f5f5 0%, #e1e1e1 100%);
-  }
-
-  .registration-card:nth-child(2) {
-    background: linear-gradient(#e1e1e1 0%, #e1e1e1 100%);
-  }
-}
-
 #testimoniale {
   display: flex;
   flex-direction: column;
@@ -2114,6 +2111,10 @@ svg {
 
 #testimoniale h2 {
   color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 4rem 0;
+  text-align: center;
 }
 
 #containerTestimoniale {
@@ -2121,31 +2122,40 @@ svg {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 5vh 5vw 5vh 5vw;
+  padding: 1vh 5vw 1vh 5vw;
 }
 
 .cardTestimoniale {
   display: flex;
   flex-direction: column;
-  height: 30em;
+  height: 27em;
   max-width: 25em;
-  background-color: #FAF9F6;
+  background: #ffffff;
+  background: -webkit-linear-gradient(#ffffff 0%, #ffffff 12%, #fcfcfc 20%, #e9e9ea 47%, #e1e1e1 65%, #e1e1e1 100%);
+  background: -o-linear-gradient(#ffffff 0%, #ffffff 12%, #fcfcfc 20%, #e9e9ea 47%, #e1e1e1 65%, #e1e1e1 100%);
+  background: linear-gradient(#ffffff 0%, #ffffff 12%, #fcfcfc 20%, #e9e9ea 47%, #e1e1e1 65%, #e1e1e1 100%);
   padding: 1.5em;
   margin: 1em;
-  border-radius: 3% 3% 3% 15%;
+  border-radius: 4% 4% 4% 20%;
+  transition: box-shadow 0.5s ease, transform 0.5s ease;
+}
+
+.cardTestimoniale:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px var(--secondary-color);
+}
+
+.cardTestimoniale h4 {
+  font-weight: 600;
 }
 
 .titluCardTestimoniale {
   margin-bottom: 1em;
 }
 
-.cardTestimoniale:nth-child(2n) {
-  border-radius: 3% 10% 3% 10%;
-}
-
 .ghilimeleTestimoniale {
   width: 2em;
-  opacity: 7%;
+  opacity: 15%;
 }
 
 .ghilimeleTestimoniale:nth-of-type(2) {
@@ -2207,12 +2217,6 @@ svg {
 
 
 @media (max-width: 1085px) and (min-width: 768px) {
-  .cardTestimoniale:last-child {
-    width: 50vw;
-    max-width: 100%;
-    height: fit-content;
-  }
-
   .cardTestimoniale {
     height: 30em;
   }
@@ -2222,4 +2226,26 @@ svg {
   body {
     background-attachment: scroll;
   }
+
+  #testimoniale h2 {
+    font-size: 2rem;
+  }
+
+  .cardTestimoniale {
+    width: 80vh;
+    margin: 1rem 0;
+  }
+
+  .cardTestimoniale h4 {
+    font-size: 1.6rem;
+  }
+
+  .cardTestimoniale h6 {
+    font-size: 1.2rem;
+  }
+
+  .cardTestimoniale>p {
+    font-size: 1.2rem;
+  }
+
 }
