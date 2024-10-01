@@ -1,7 +1,7 @@
 import counterUp from 'counterup2'
 require('waypoints/lib/noframework.waypoints.js');
 
-var SMARTHACK_DATE = new Date(2024, 9, 2, 0); // luna e 0-indexed
+var SMARTHACK_DATE = new Date(2024, 9, 15, 0); // luna e 0-indexed
 
 $(document).ready(function () {
 	var window_height = $(window).height();
