@@ -517,7 +517,7 @@ section#despreSmarthack {
   background-image: url(img/1.jpg);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   height: auto;
   width: auto;
 }
