@@ -517,9 +517,15 @@ section#despreSmarthack {
   background-image: url(img/1.jpg);
   background-position: center;
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   height: auto;
   width: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  #despreSmarthack {
+    background-attachment: scroll;
+  }
 }
 
 #despreSmarthack>p h3 {
@@ -632,6 +638,12 @@ section#despreSmarthack {
   background-attachment: fixed;
   padding: 50px 0;
   color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-where-when {
+    background-attachment: scroll;
+  }
 }
 
 .section-where-when .overlay {
@@ -792,6 +804,11 @@ ul.program {
   background-attachment: fixed;
   height: 100%;
   z-index: 99;
+}
+@media only screen and (max-width: 768px) {
+  #section4 {
+    background-attachment: scroll;
+  }
 }
 
 #section4>p {
@@ -1369,7 +1386,6 @@ svg {
   background-image: url("img/voluntari.jpg");
   background-position: right;
   background-size: cover;
-  background-attachment: fixed;
   height: auto;
 }
 
