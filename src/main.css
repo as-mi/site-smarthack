@@ -730,13 +730,13 @@ ul.program {
 @media (max-width: 768px) {
   .program-wrapper {
     grid-template-columns: 1fr;
-    margin-right: 0rem;
-    margin-left: 2rem;
+    margin-right: -1rem;
+    margin-left: 1.5rem;
 
   }
 
   .program-wrapper p {
-    font-size: 1.05rem;
+    font-size: 1.rem;
   }
 }
 
@@ -805,6 +805,7 @@ ul.program {
   height: 100%;
   z-index: 99;
 }
+
 @media only screen and (max-width: 768px) {
   #section4 {
     background-attachment: scroll;
