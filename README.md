@@ -38,6 +38,12 @@ Site-ul local va fi disponibil la adresa `http://localhost:1234`.
 npm run build
 ```
 
+### Smarthack 2024
+
+--- 
+
+## Din trecut
+
 ### Organizare SH 2023:
 
 Am decis imprena cu PMii sa impartim cele 2 saptamani pana la inceperea inscrierilor in 2 sprinturi a cate o saptamana, pentru a putea realiza toate cele necesare.
