@@ -91,6 +91,8 @@ Așteptăm până când e gata build-ul.
 4. Observăm că s-a creat un folder cu numele `dist`. Mutăm conținutul acestuia astfel:
 ```
 # Ne poziționăm aici: root@site-asmi:/var/www#
+cd ..
+
 # Ștergem fișierele vechi
 rm -r smarthack
 
