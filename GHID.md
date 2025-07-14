@@ -15,12 +15,11 @@
   pentru a stoca imaginile și documentele binare.
   - Pe Windows, vine de obicei instalat cu Git.
   - Pe alte sisteme, poate fi instalat din package manager.
-- De preferat, să fiți conectați la Git în editorul de text preferat (Recomandat: VS Code)
+- De preferat, să fiți conectați la Git în editorul de text preferat (Recomandat: VS Code) și să folosiți GitHub Desktop sau alt asistent cu care sunteți familiari.
 
 ### Descărcare
 
 Asigurați-vă că rulați această comandă la adresa pe care o doriți, de exemplu pentru `C:\Facultate\ASMI\Proiecte`, după rularea comenzii vom vedea folder-ul `C:\Facultate\ASMI\Proiecte\site-smarthack`.
-
 
 ```{bash}
 git clone https://github.com/as-mi/site-smarthack.git
@@ -46,20 +45,20 @@ npm install
 
 Asigurați-vă că în .gitignore există `node_modules/`. Acestea sunt necesare doar local.
 
-### Pornire server de dezvoltare
+### Încărcarea versiunii curente a site-ului
+```{bash}
+npm run build
+```
+
+### Pornire serviciului de dezvoltare
 
 ```{bash}
 npm run dev
 ```
 
-Site-ul local va fi disponibil la adresa `http://localhost:1234`. Actualizările se vor vedea în timp real, cu rare excepții, de exemplu când sunt modificate fișiere existente.
+Site-ul local va fi disponibil la adresa `http://localhost:1234`. Actualizările se vor vedea în timp real, cu rare excepții, de exemplu când sunt modificate fișiere existente. În acest caz, va fi necesar să dați build din nou.
 
-### Build
-
-```{bash}
-npm run build
-```
-
+### Pentru a face controlul versiunilor mai ușor, folosiți GitHub Desktop.
 
 <br>
 
@@ -105,7 +104,7 @@ mv -r site-smarthack/dist/* smarthack
 systemctl restart nginx.service
 ```
 
-4. (Opțional) Pentru mentenanță pe o perioadă îndelungată sau pentru ezitarea utilizării resurselor serverului în scop inutil, se poate opri temporar serviciul.
+6. (Opțional) Pentru mentenanță pe o perioadă îndelungată sau pentru ezitarea utilizării resurselor serverului în scop inutil, se poate opri temporar serviciul.
 ```
 systemctl stop nginx.service
 
@@ -113,8 +112,8 @@ systemctl stop nginx.service
 systemctl start nginx.service
 ```
 
-5. Folosiți `exit` pentru a întrerupe corespunzător sesiunea de lucru.
+7. Folosiți `exit` pentru a întrerupe corespunzător sesiunea de lucru.
 
-6. Ne asigurăm că tot ce trebuia modificat apare pe site. <b>Utilizați CTRL+F5 (Force reload) înainte de această verificare</b>
+8. Ne asigurăm că tot ce trebuia modificat apare pe site. <b>Utilizați CTRL+F5 (Force reload) înainte de această verificare</b>
 
 ## Mult succes! 💙
