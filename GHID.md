@@ -80,24 +80,17 @@ git pull orginin main
 git lfs pull
 ```
 
-3. Builduim versiunea nouă a paginii:
+3. Ștergem conținutul fișierului `dist`.
+```
+rm -r dist
+```
+
+4. Builduim versiunea nouă a paginii:
 ```
 npm run build
 ```
 
-Așteptăm până când e gata build-ul.
-
-4. Observăm că s-a creat un folder cu numele `dist`. Mutăm conținutul acestuia astfel:
-```
-# Ne poziționăm aici: root@site-asmi:/var/www#
-cd ..
-
-# Ștergem fișierele vechi
-rm -r smarthack
-
-# Aducem recursiv fișierele create, din folder-ul site-smarthack în folder-ul smarthack
-mv -r site-smarthack/dist/* smarthack
-```
+**Așteptăm până când e gata build-ul**. Acum ar trebui să apară modificările pe subdomeniu.
 
 5. Pentru o sincronizare corectă a server-ului cu datele noi, trebuie să restartăm serviciul care menține pagina web.
 ```
@@ -114,6 +107,6 @@ systemctl start nginx.service
 
 7. Folosiți `exit` pentru a întrerupe corespunzător sesiunea de lucru.
 
-8. Ne asigurăm că tot ce trebuia modificat apare pe site. <b>Utilizați CTRL+F5 (Force reload) înainte de această verificare</b>
+8. Ne asigurăm că tot ce trebuia modificat apare pe site. <b>Utilizați CTRL+F5 (Force reload) înainte de această verificare</b>.
 
 ## Mult succes! 💙
