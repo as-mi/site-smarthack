@@ -1,4 +1,5 @@
-# Smarthack 2025
+# Ultima ediție: Smarthack 2024
+**Site scos din producție**
 
 Acest repository conține codul sursă al site-ului de prezentare al hackathon-ului Smarthack, proiect organizat de Asociația Studenților la Matematică și Informatică.
 
